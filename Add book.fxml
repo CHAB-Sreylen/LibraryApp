@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Rectangle fill="#f4f4f4" height="259.0" layoutX="7.0" layoutY="46.0" stroke="#d1cfcf" strokeType="INSIDE" width="129.0" />
+      <Rectangle arcHeight="50.0" arcWidth="25.0" fill="WHITE" height="24.0" layoutX="141.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+      <Text layoutX="165.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add book" wrappingWidth="52.68865966796875">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Circle fill="#ff6f1f" layoutX="153.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Circle fill="#ff6f1f" layoutX="234.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Text layoutX="248.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update book" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Circle fill="#ff6f1f" layoutX="332.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Text layoutX="346.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register book" wrappingWidth="83.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="465.0" layoutY="18.0" stroke="#e5e2e2" strokeType="INSIDE" width="129.0" />
+      <Text fill="#9d9999" layoutX="476.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" wrappingWidth="52.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Rectangle height="24.0" layoutX="142.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="453.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.127017542719841" green="0.1648070216178894" blue="0.378947377204895" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.125490203499794" green="0.16470588743686676" blue="0.3686274588108063" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.17555246357832716">
+                     <color>
+                        <Color red="0.125490203499794" green="0.16470588743686676" blue="0.3686274588108063" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3275495171059093">
+                     <color>
+                        <Color red="0.125490203499794" green="0.16470588743686676" blue="0.3686274588108063" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5127516778523489">
+                     <color>
+                        <Color red="0.07388889044523239" green="0.17824074625968933" blue="0.699999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6134146341463415">
+                     <color>
+                        <Color red="0.1257999986410141" green="0.1705700010061264" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7828940906858728">
+                     <color>
+                        <Color red="0.1257999986410141" green="0.1665000021457672" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9856195776722869">
+                     <color>
+                        <Color red="0.1257999986410141" green="0.1665000021457672" blue="0.3700000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="156.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Book" />
+      <Avatar layoutX="20.0" layoutY="63.0" />
+      <Text layoutX="63.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="20.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My categories" wrappingWidth="94.99999999999989">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="94.99999999999989">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting" wrappingWidth="94.99999999999989">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" wrappingWidth="94.99999999999989">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This month" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="144.0" layoutY="100.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Circle accessibleRole="BUTTON" fill="#e5e2e2" layoutX="176.0" layoutY="143.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Text layoutX="168.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="226.0" layoutY="100.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="307.0" layoutY="100.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Text layoutX="144.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add book " wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="226.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="226.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="307.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="307.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last month" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="141.0" layoutY="249.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="226.0" layoutY="249.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="307.0" layoutY="249.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="388.0" layoutY="249.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Rectangle fill="#e5e2e2" height="93.0" layoutX="470.0" layoutY="249.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
+      <Text layoutX="141.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="226.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="306.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="388.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="470.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="226.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="307.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="388.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="470.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" wrappingWidth="64.68865966796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
