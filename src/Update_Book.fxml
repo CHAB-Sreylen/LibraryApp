@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="389.0" layoutY="27.0" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 28px;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde2e7" height="450.0" layoutX="29.0" layoutY="69.0" stroke="#dde2e7" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="87.0" layoutY="26.0" text="Library">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Circle fill="#a5abb1" layoutX="72.0" layoutY="112.0" radius="27.0" stroke="#a5abb1" strokeType="INSIDE" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="85.0" />
+      <Label layoutX="113.0" layoutY="97.0" text="Your Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="165.0" text="My categories">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="215.0" text="History">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="265.0" text="Setting">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="315.0" text="Log out">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Circle fill="#cf5600" layoutX="269.0" layoutY="45.0" radius="8.0" stroke="#cf5600" strokeType="INSIDE" />
+      <Circle fill="#cf5600" layoutX="404.0" layoutY="45.0" radius="8.0" stroke="#cf5600" strokeType="INSIDE" />
+      <Circle fill="#cf5600" layoutX="563.0" layoutY="45.0" radius="8.0" stroke="#cf5600" strokeType="INSIDE" />
+      <Label layoutX="284.0" layoutY="35.0" text="Add Book">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="35.0" prefWidth="81.0" text="Update Book">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="35.0" text="Register Book">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00284e" height="47.0" layoutX="261.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="612.0" />
+      <Label layoutX="284.0" layoutY="76.0" text="My Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="710.0" layoutY="34.0" prefHeight="26.0" prefWidth="114.0" style="-fx-background-radius: 15px;" />
+      <Label layoutX="720.0" layoutY="39.0" text="Searh" textFill="#898989" />
+      <FontAwesomeIconView fill="#b7b7b7" glyphName="SEARCH" layoutX="837.0" layoutY="53.0" size="20" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="261.0" layoutY="127.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="263.0" layoutY="288.0" text="Title Book" />
+      <Label layoutX="263.0" layoutY="305.0" text="Author" />
+      <TextField layoutX="329.0" layoutY="293.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="333.0" layoutY="297.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="261.0" layoutY="350.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="263.0" layoutY="511.0" text="Title Book" />
+      <Label layoutX="263.0" layoutY="528.0" text="Author" />
+      <TextField layoutX="330.0" layoutY="514.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="334.0" layoutY="519.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="409.0" layoutY="127.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="411.0" layoutY="288.0" text="Title Book" />
+      <Label layoutX="411.0" layoutY="305.0" text="Author" />
+      <TextField layoutX="478.0" layoutY="292.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="482.0" layoutY="296.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="409.0" layoutY="350.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="411.0" layoutY="511.0" text="Title Book" />
+      <Label layoutX="411.0" layoutY="528.0" text="Author" />
+      <TextField layoutX="478.0" layoutY="514.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="482.0" layoutY="519.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="710.0" layoutY="127.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="712.0" layoutY="288.0" text="Title Book" />
+      <Label layoutX="712.0" layoutY="305.0" text="Author" />
+      <TextField layoutX="779.0" layoutY="291.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="783.0" layoutY="296.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="710.0" layoutY="350.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="712.0" layoutY="511.0" text="Title Book" />
+      <Label layoutX="712.0" layoutY="528.0" text="Author" />
+      <TextField layoutX="779.0" layoutY="514.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="783.0" layoutY="519.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#d7d5d5" glyphName="USER" layoutX="59.0" layoutY="124.0" size="35" wrappingWidth="12.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="561.0" layoutY="127.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="563.0" layoutY="288.0" text="Title Book" />
+      <Label layoutX="563.0" layoutY="305.0" text="Author" />
+      <TextField layoutX="630.0" layoutY="291.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="634.0" layoutY="296.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6a9ae" height="154.0" layoutX="561.0" layoutY="350.0" stroke="#a6a9ae" strokeType="INSIDE" width="114.0" />
+      <Label layoutX="563.0" layoutY="511.0" text="Title Book" />
+      <Label layoutX="563.0" layoutY="528.0" text="Author" />
+      <TextField layoutX="630.0" layoutY="514.0" prefHeight="0.0" prefWidth="44.0" style="-fx-background-color: Blue;" styleClass="-fx-background-radius: 8px" />
+      <Label layoutX="634.0" layoutY="519.0" text="Update" textFill="#c4c2c2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
