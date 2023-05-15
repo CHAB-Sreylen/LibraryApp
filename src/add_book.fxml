@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
@@ -10,7 +9,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -28,18 +26,18 @@
       </Text>
       <Circle fill="#ff6f1f" layoutX="153.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Circle fill="#ff6f1f" layoutX="234.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Text layoutX="248.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update book" wrappingWidth="64.68865966796875">
+      <Text accessibleRole="BUTTON" layoutX="248.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update book" wrappingWidth="64.68865966796875">
          <font>
             <Font size="10.0" />
          </font>
       </Text>
       <Circle fill="#ff6f1f" layoutX="332.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Text layoutX="346.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register book" wrappingWidth="83.0">
+      <Text accessibleRole="BUTTON" layoutX="346.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register book" wrappingWidth="83.0">
          <font>
             <Font size="10.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="465.0" layoutY="18.0" stroke="#e5e2e2" strokeType="INSIDE" width="129.0" />
+      <Rectangle accessibleRole="BUTTON" arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="465.0" layoutY="18.0" stroke="#e5e2e2" strokeType="INSIDE" width="129.0" />
       <Text fill="#9d9999" layoutX="476.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" wrappingWidth="52.68865966796875">
          <font>
             <Font size="11.0" />
@@ -99,24 +97,23 @@
          </fill>
       </Rectangle>
       <Text fill="WHITE" layoutX="156.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Book" />
-      <Avatar layoutX="20.0" layoutY="63.0" />
       <Text layoutX="63.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
-      <Text layoutX="20.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My categories" wrappingWidth="94.99999999999989">
+      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My categories" wrappingWidth="94.99999999999989">
          <font>
             <Font size="11.0" />
          </font>
       </Text>
-      <Text layoutX="20.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="94.99999999999989">
+      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="94.99999999999989">
          <font>
             <Font size="11.0" />
          </font>
       </Text>
-      <Text layoutX="20.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting" wrappingWidth="94.99999999999989">
+      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting" wrappingWidth="94.99999999999989">
          <font>
             <Font size="11.0" />
          </font>
       </Text>
-      <Text layoutX="20.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" wrappingWidth="94.99999999999989">
+      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" wrappingWidth="94.99999999999989">
          <font>
             <Font size="11.0" />
          </font>
@@ -128,7 +125,7 @@
       </Text>
       <Rectangle fill="#e5e2e2" height="93.0" layoutX="144.0" layoutY="100.0" stroke="#e5e2e2" strokeType="INSIDE" width="65.0" />
       <Circle accessibleRole="BUTTON" fill="#e5e2e2" layoutX="176.0" layoutY="143.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
-      <Text layoutX="168.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+      <Text accessibleRole="BUTTON" layoutX="168.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
          <font>
             <Font size="24.0" />
          </font>
@@ -220,6 +217,7 @@
             <Font size="11.0" />
          </font>
       </Text>
+      <Circle fill="WHITE" layoutX="37.0" layoutY="82.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
    <opaqueInsets>
       <Insets />
