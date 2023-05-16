@@ -3,6 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class App extends Application {
     public static void main(String[] args) throws Exception {
@@ -11,10 +12,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("add_book.fxml"));
-
+        Parent root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Welcome to Library App");
-        stage.setScene(new Scene(root, 800, 800));
+        stage.setScene(new Scene(root, 1200, 800));
         stage.show();
     }
 }

@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #b8b8ff;" BorderPane.alignment="CENTER">
@@ -40,22 +39,22 @@
                   <Font name="Verdana" size="24.0" />
                </font>
             </Label>
-            <TextField layoutX="207.0" layoutY="261.0" prefHeight="36.0" prefWidth="325.0" promptText="username">
+            <TextField fx:id="usernameTextField" layoutX="207.0" layoutY="261.0" prefHeight="36.0" prefWidth="325.0" promptText="username">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField layoutX="207.0" layoutY="359.0" prefHeight="36.0" prefWidth="325.0" promptText="password">
+            <TextField fx:id="passTextField" layoutX="207.0" layoutY="359.0" prefHeight="36.0" prefWidth="325.0" promptText="password">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button layoutX="59.0" layoutY="470.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="474.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
+            <Button fx:id="LoginButton" layoutX="59.0" layoutY="470.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="474.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="59.0" layoutY="557.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="474.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
+            <Button fx:id="cancelButton" layoutX="59.0" layoutY="557.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="474.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
