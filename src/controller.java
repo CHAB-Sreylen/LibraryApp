@@ -6,15 +6,15 @@ import javafx.stage.Stage;
 
 public class controller {
     @FXML
-    private Button cancelButton;
+    private Button CancelButton;
     @FXML
     private Label loginButtonlLabel;
 
     public void loginButtonlLabelOnAction(ActionEvent e){
         loginButtonlLabel.setText("You did not have account");
     }
-    public void cancelButtonOnAction(ActionEvent e){
-         Stage stage = (Stage) cancelButton.getScene().getWindow();
+    public void CancelButtonOnAction(ActionEvent e){
+         Stage stage = (Stage) CancelButton.getScene().getWindow();
          stage.close();
 
     }

@@ -12,7 +12,7 @@ public class App extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("my_categories.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
         stage.initStyle(StageStyle.UNDECORATED);
         //stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root, 900, 600));
