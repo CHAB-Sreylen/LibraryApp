@@ -24,37 +24,37 @@
    <center>
       <AnchorPane prefHeight="800.0" prefWidth="450.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="252.0" layoutY="102.0" text="Login">
+            <Label layoutX="177.0" layoutY="100.0" text="Login">
                <font>
                   <Font name="Verdana" size="36.0" />
                </font>
             </Label>
-            <Label layoutX="21.0" layoutY="267.0" text="Username">
+            <Label layoutX="42.0" layoutY="220.0" text="Username">
                <font>
-                  <Font name="Verdana" size="24.0" />
+                  <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="21.0" layoutY="366.0" text="Password">
+            <Label layoutX="42.0" layoutY="300.0" text="Password">
                <font>
-                  <Font name="Verdana" size="24.0" />
+                  <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" layoutX="163.0" layoutY="262.0" prefHeight="39.0" prefWidth="275.0" promptText="username">
+            <TextField fx:id="usernameTextField" layoutX="151.0" layoutY="212.0" prefHeight="39.0" prefWidth="275.0" promptText="username">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="passwordtextfield" layoutX="163.0" layoutY="361.0" prefHeight="36.0" prefWidth="275.0" promptText="password">
+            <TextField fx:id="passwordtextfield" layoutX="151.0" layoutY="292.0" prefHeight="36.0" prefWidth="275.0" promptText="password">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button fx:id="LoginButton" layoutX="23.0" layoutY="451.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="405.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="CancelButton" layoutX="23.0" layoutY="517.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="405.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
+            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
