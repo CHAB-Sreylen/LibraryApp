@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
    <left>
       <AnchorPane prefHeight="0.0" prefWidth="450.0" style="-fx-background-color: #b8b8ff;" BorderPane.alignment="CENTER">
          <children>
@@ -49,12 +49,12 @@
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#loginButtonlLabelOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
+            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
