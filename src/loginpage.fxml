@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -24,6 +25,10 @@
    <center>
       <AnchorPane prefHeight="800.0" prefWidth="450.0" BorderPane.alignment="CENTER">
          <children>
+            <PasswordField fx:id="passwordtextField" layoutX="151.0" layoutY="292.0" prefHeight="39.0" prefWidth="275.0" promptText="password">
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
             <Label layoutX="177.0" layoutY="100.0" text="Login">
                <font>
                   <Font name="Verdana" size="36.0" />
@@ -39,17 +44,12 @@
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" layoutX="151.0" layoutY="212.0" prefHeight="39.0" prefWidth="275.0" promptText="username">
+            <TextField fx:id="usernametextField" layoutX="151.0" layoutY="212.0" prefHeight="39.0" prefWidth="275.0" promptText="username">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="passwordtextfield" layoutX="151.0" layoutY="292.0" prefHeight="36.0" prefWidth="275.0" promptText="password">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </TextField>
-            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#loginButtonlLabelOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#LogindButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -59,6 +59,11 @@
                   <Font size="18.0" />
                </font>
             </Button>
+            <Label fx:id="LoginwordButton" layoutX="81.0" layoutY="164.0" prefHeight="17.0" prefWidth="310.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </center>
