@@ -20,7 +20,6 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="50.0" arcWidth="25.0" fill="WHITE" height="24.0" layoutX="189.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="95.0" />
       <Text layoutX="219.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add book" wrappingWidth="74.99999999999994">
          <font>
             <Font size="13.0" />

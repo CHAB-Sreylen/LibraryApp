@@ -22,8 +22,7 @@
         "request": "launch",
         "mainClass": "App",
         "projectName": "LibraryApp_6026eced",
-        //"vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
-        "vmArgs": "--module-path C:/len/LibraryApp--add-modules javafx.controls,javafx.fxml"
+        "vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
       },
       {
         "type": "java",
@@ -31,16 +30,15 @@
         "request": "launch",
         "mainClass": "App",
         "projectName": "LibraryApp_2ac5920",
-        //"vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
-        "vmArgs": "--module-path C:/len/LibraryApp--add-modules javafx.controls,javafx.fxml"
+        "vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
       },
       {
         "type": "java",
         "name": "Current File",
         "request": "launch",
         "mainClass": "${file}",
-        //"vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
-        "vmArgs": "--module-path C:/len/LibraryApp--add-modules javafx.controls,javafx.fxml"
+        "vmArgs": "--module-path \"C:/len/LibraryApp\" --add-modules javafx.controls,javafx.fxml"
+       
       }
     ]
 }
