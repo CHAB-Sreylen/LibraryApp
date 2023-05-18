@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -124,10 +122,9 @@
          </font>
       </Text>
       <Rectangle fill="#e5e2e2" height="150.0" layoutX="209.0" layoutY="104.0" stroke="#e5e2e2" strokeType="INSIDE" width="100.0" />
-      <Circle accessibleRole="BUTTON" fill="#e5e2e2" layoutX="258.0" layoutY="182.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
-      <Text accessibleRole="BUTTON" layoutX="250.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+      <Text fx:id="AddButton" accessibleRole="BUTTON" layoutX="234.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
          <font>
-            <Font size="24.0" />
+            <Font size="72.0" />
          </font>
       </Text>
       <Text layoutX="209.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add book " wrappingWidth="64.68865966796875">
@@ -151,20 +148,6 @@
          </font>
       </Text>
       <Circle fill="WHITE" layoutX="37.0" layoutY="86.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-      <Accordion layoutX="87.0" layoutY="-97.0">
-        <panes>
-          <TitledPane animated="false" text="untitled 1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 3">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
       <Rectangle fill="#e5e2e2" height="150.0" layoutX="332.0" layoutY="105.0" stroke="#e5e2e2" strokeType="INSIDE" width="100.0" />
       <Rectangle fill="#e5e2e2" height="150.0" layoutX="456.0" layoutY="105.0" stroke="#e5e2e2" strokeType="INSIDE" width="100.0" />
       <Rectangle fill="#e5e2e2" height="150.0" layoutX="581.0" layoutY="104.0" stroke="#e5e2e2" strokeType="INSIDE" width="100.0" />
