@@ -8,7 +8,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+      {
+        "type": "java",
+        "name": "test",
+        "request": "launch",
+        "mainClass": "test",
+        "projectName": "LibraryApp_6026eced"
+      },
       {
         "type": "java",
         "name": "App",
