@@ -59,7 +59,7 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <Label fx:id="LoginwordButton" layoutX="81.0" layoutY="164.0" prefHeight="17.0" prefWidth="310.0" textFill="RED">
+            <Label fx:id="LoginwordButton" alignment="CENTER" layoutX="81.0" layoutY="350.0" prefHeight="17.0" prefWidth="310.0" textFill="RED">
                <font>
                   <Font size="18.0" />
                </font>

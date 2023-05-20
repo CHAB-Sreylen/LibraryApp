@@ -1,6 +1,10 @@
+<<<<<<< HEAD:src/controller.java
 import java.io.IOException;
 import java.util.EventObject;
 
+=======
+package samples.db;
+>>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8:src/samples/db/controller.java
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +17,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
+
+import java.sql.Connection;
 
 public class controller {
     private Stage stage;
@@ -27,7 +33,8 @@ public class controller {
 
     public void LogindButtonOnAction(ActionEvent e){
         if (usernametextField.getText().isBlank()== false && passwordtextField.getText().isBlank() == false ){
-            LoginwordButton.setText("Please try again!");
+            //LoginwordButton.setText("Please try again!");
+            validateLogin();
         }else{
             LoginwordButton.setText("Please enter username and password!");
         }
@@ -42,6 +49,7 @@ public class controller {
          Stage stage = (Stage) CancelButton.getScene().getWindow();
          stage.close();
     }
+<<<<<<< HEAD:src/controller.java
     @FXML 
     private Button borrowbutton;
     @FXML
@@ -68,5 +76,12 @@ public class controller {
     }
 
 
+=======
+    public void validateLogin(){
+        DatabaseConnection connectNow = new DatabaseConnection();
+
+        Connection connectionDB = connectNow.getConnection();
+    }
+>>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8:src/samples/db/controller.java
   
 }
