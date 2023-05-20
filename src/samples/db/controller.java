@@ -34,11 +34,12 @@ public class controller {
     public void LogindButtonOnAction(ActionEvent e){
         if (usernametextField.getText().isBlank()== false && passwordtextField.getText().isBlank() == false ){
             //LoginwordButton.setText("Please try again!");
-            validateLogin();
+            //validateLogin();
         }else{
             LoginwordButton.setText("Please enter username and password!");
         }
     }
+<<<<<<< HEAD
 
 
 
@@ -83,5 +84,18 @@ public class controller {
         Connection connectionDB = connectNow.getConnection();
     }
 >>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8:src/samples/db/controller.java
+=======
+    // @FXML
+    // private Button CancelButton;
+    // public void CancelButtonOnAction(ActionEvent e){
+    //      Stage stage = (Stage) CancelButton.getScene().getWindow();
+    //      stage.close();
+    // }
+    // public void validateLogin(){
+    //     DatabaseConnection connectNow = new DatabaseConnection();
+
+    //     Connection connectionDB = connectNow.getConnection();
+    // }
+>>>>>>> e7cc847a8e981a8fd7afb0c1aa70784b243d416d
   
 }
