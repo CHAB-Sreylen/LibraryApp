@@ -20,21 +20,21 @@ public class controller {
     public void LogindButtonOnAction(ActionEvent e){
         if (usernametextField.getText().isBlank()== false && passwordtextField.getText().isBlank() == false ){
             //LoginwordButton.setText("Please try again!");
-            validateLogin();
+            //validateLogin();
         }else{
             LoginwordButton.setText("Please enter username and password!");
         }
     }
-    @FXML
-    private Button CancelButton;
-    public void CancelButtonOnAction(ActionEvent e){
-         Stage stage = (Stage) CancelButton.getScene().getWindow();
-         stage.close();
-    }
-    public void validateLogin(){
-        DatabaseConnection connectNow = new DatabaseConnection();
+    // @FXML
+    // private Button CancelButton;
+    // public void CancelButtonOnAction(ActionEvent e){
+    //      Stage stage = (Stage) CancelButton.getScene().getWindow();
+    //      stage.close();
+    // }
+    // public void validateLogin(){
+    //     DatabaseConnection connectNow = new DatabaseConnection();
 
-        Connection connectionDB = connectNow.getConnection();
-    }
+    //     Connection connectionDB = connectNow.getConnection();
+    // }
   
 }
