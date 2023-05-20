@@ -12,7 +12,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("re2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
         stage.initStyle(StageStyle.UNDECORATED);
         // stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root));

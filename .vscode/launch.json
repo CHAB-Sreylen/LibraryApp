@@ -6,17 +6,23 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-<<<<<<< HEAD
     "version": "0.2.0",
     "configurations": [
       {
         "type": "java",
-<<<<<<< HEAD
+        "name": "App",
+        "request": "launch",
+        "mainClass": "App",
+        "projectName": "LibraryApp_e5a35f6",
+        "vmArgs": "--module-path \"D:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+      },
+      {
+        "type": "java",
         "name": "RegisterBook_Controller",
         "request": "launch",
         "mainClass": "RegisterBook_Controller",
         "projectName": "LibraryApp_e0e5dd41",
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+        "vmArgs": "--module-path \"D:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
       },
       {
         "type": "java",
@@ -24,81 +30,7 @@
         "request": "launch",
         "mainClass": "App",
         "projectName": "LibraryApp_e0e5dd41",
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-      },
-      {
-        "type": "java",
-=======
-<<<<<<< HEAD
-        "name": "test",
-        "request": "launch",
-        "mainClass": "test",
-        "projectName": "LibraryApp_6026eced"
-=======
->>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8
-        "name": "App",
-        "request": "launch",
-        "mainClass": "App",
-        "projectName": "LibraryApp_12fb9c78",
-<<<<<<< HEAD
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-=======
-        "vmArgs": "--module-path C:/len/LibraryApp--add-modules javafx.controls,javafx.fxml"
->>>>>>> 3d55c538e72ac015f53e5db79e18cab063f0a145
->>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8
-      },
-      {
-        "type": "java",
-        "name": "App",
-        "request": "launch",
-        "mainClass": "App",
-        "projectName": "LibraryApp_6026eced",
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-      },
-      {
-        "type": "java",
-        "name": "App",
-        "request": "launch",
-        "mainClass": "App",
-        "projectName": "LibraryApp_2ac5920",
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-      },
-      {
-        "type": "java",
-        "name": "Current File",
-        "request": "launch",
-        "mainClass": "${file}",
-        "vmArgs": "--module-path \"D:/Year3-s2/javafx/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+        "vmArgs": "--module-path \"D:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
       }
     ]
-=======
-   
-"version": "0.2.0",
-"configurations": [
-  {
-    "type": "java",
-    "name": "App",
-    "request": "launch",
-    "mainClass": "App",
-    "projectName": "LibraryApp_6f8a37ab",
-    "vmArgs": "--module-path \"D:\test5/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-
-  },
-  {
-    "type": "java",
-    "name": "App",
-    "request": "launch",
-    "mainClass": "App",
-    "projectName": "LibraryApp_2ac5920",
-    "vmArgs": "--module-path \"D:\test5/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-  },
-  {
-    "type": "java",
-    "name": "Current File",
-    "request": "launch",
-    "mainClass": "${file}",
-    "vmArgs": "--module-path \"D:\test5/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-  }
-]
->>>>>>> e7cc847a8e981a8fd7afb0c1aa70784b243d416d
 }

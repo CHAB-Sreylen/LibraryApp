@@ -1,10 +1,8 @@
-<<<<<<< HEAD:src/controller.java
-import java.io.IOException;
-import java.util.EventObject;
 
-=======
-package samples.db;
->>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8:src/samples/db/controller.java
+//import java.io.IOException;
+//import java.util.EventObject;
+
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
+import samples.db.DatabaseConnection;
 
 import java.sql.Connection;
 
@@ -39,18 +38,23 @@ public class controller {
             LoginwordButton.setText("Please enter username and password!");
         }
     }
-<<<<<<< HEAD
-
-
-
-
     @FXML
     private Button CancelButton;
     public void CancelButtonOnAction(ActionEvent e){
          Stage stage = (Stage) CancelButton.getScene().getWindow();
          stage.close();
     }
-<<<<<<< HEAD:src/controller.java
+
+
+
+
+
+
+
+
+
+    
+
     @FXML 
     private Button borrowbutton;
     @FXML
@@ -62,29 +66,26 @@ public class controller {
     private Text borrowword1;
     
 
-    public void borrowbuttonOnAction(ActionEvent e) throws IOException{
-        if (borrowword1.getText().isBlank()== false && borrowword2.getText().isBlank()== false ){
-            word.setText("Please try again!");
-        }else{
-            word.setText("hi");
-        }
-         Parent root = FXMLLoader.load(getClass().getResource("Borrow_link.fxml"));
+    // public void borrowbuttonOnAction(ActionEvent e) throws IOException{
+    //     if (borrowword1.getText().isBlank()== false && borrowword2.getText().isBlank()== false ){
+    //         word.setText("Please try again!");
+    //     }else{
+    //         word.setText("hi");
+    //     }
+    //      Parent root = FXMLLoader.load(getClass().getResource("Borrow_link.fxml"));
 
-        EventObject event;
-        Stage stage = (Stage) ((Node) ((EventObject) event).getSource()).getScene().getWindow();
-
-
-    }
+    //     EventObject event;
+    //     Stage stage = (Stage) ((Node) ((EventObject) event).getSource()).getScene().getWindow();
 
 
-=======
+    // }
+
+
     public void validateLogin(){
         DatabaseConnection connectNow = new DatabaseConnection();
 
         Connection connectionDB = connectNow.getConnection();
     }
->>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8:src/samples/db/controller.java
-=======
     // @FXML
     // private Button CancelButton;
     // public void CancelButtonOnAction(ActionEvent e){
@@ -96,6 +97,6 @@ public class controller {
 
     //     Connection connectionDB = connectNow.getConnection();
     // }
->>>>>>> e7cc847a8e981a8fd7afb0c1aa70784b243d416d
+
   
 }
