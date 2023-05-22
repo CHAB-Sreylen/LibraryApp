@@ -31,11 +31,11 @@ public class controller {
     private PasswordField passwordtextField;
 
     public void LogindButtonOnAction(ActionEvent e){
-        if (usernametextField.getText().isBlank()== false && passwordtextField.getText().isBlank() == false ){
+       // if (usernametextField.getText().isBlank()== false && passwordtextField.getText().isBlank() == false ){
             //LoginwordButton.setText("Please try again!");
             //validateLogin();
-        }else{
-            LoginwordButton.setText("Please enter username and password!");
+        ////}else{
+          //  LoginwordButton.setText("Please enter username and password!");
         }
     }
     @FXML
