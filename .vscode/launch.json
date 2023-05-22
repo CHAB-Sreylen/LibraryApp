@@ -1,14 +1,18 @@
- "version": "0.2.0",
+
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
       {
         "type": "java",
         "name": "App",
         "request": "launch",
         "mainClass": "App",
-<<<<<<< HEAD
-            "projectName": "LibraryApp_2ac5920",
-        "vmArgs": "--module-path \"C:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-=======
         "projectName": "LibraryApp_b4b1c8e3",
         "vmArgs": "--module-path \"D:/Newproject/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
       },
@@ -19,7 +23,6 @@
         "mainClass": "App",
         "projectName": "LibraryApp_e5a35f6",
         "vmArgs": "--module-path \"D:/Newproject/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> a4ca9baa31133044962b42be200f17b0df6fd7d9
       },
       {
         "type": "java",
@@ -27,11 +30,7 @@
         "request": "launch",
         "mainClass": "RegisterBook_Controller",
         "projectName": "LibraryApp_e0e5dd41",
-<<<<<<< HEAD
-        "vmArgs": "--module-path \"C:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-=======
         "vmArgs": "--module-path \"D:/Newproject/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> a4ca9baa31133044962b42be200f17b0df6fd7d9
       },
       {
         "type": "java",
@@ -39,10 +38,7 @@
         "request": "launch",
         "mainClass": "App",
         "projectName": "LibraryApp_e0e5dd41",
-<<<<<<< HEAD
-        "vmArgs": "--module-path \"C:/Project_IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-=======
         "vmArgs": "--module-path \"D:/Newproject/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> a4ca9baa31133044962b42be200f17b0df6fd7d9
       }
     ]
+}
