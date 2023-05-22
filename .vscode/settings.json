@@ -2,12 +2,8 @@
   "java.project.sourcePaths": ["src"],
   "java.project.outputPath": "bin",
   "java.project.referencedLibraries": [
-<<<<<<< HEAD
-    "lib/**/*.jar"
-=======
     "lib/**/*.jar",
     "mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"
->>>>>>> f938a27e33111299c8b37610cfdaa6dfb22b09f8
   ],
   "java.debug.settings.onBuildFailureProceed": true
 }
