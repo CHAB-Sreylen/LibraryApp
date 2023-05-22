@@ -5,6 +5,14 @@
         "name": "App",
         "request": "launch",
         "mainClass": "App",
+        "projectName": "LibraryApp_e286849c",
+        "vmArgs": "--module-path \"D:/git/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+      },
+      {
+        "type": "java",
+        "name": "App",
+        "request": "launch",
+        "mainClass": "App",
         "projectName": "LibraryApp_e5a35f6",
         "vmArgs": "--module-path \"D:/git/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
       },
@@ -15,7 +23,7 @@
         "mainClass": "RegisterBook_Controller",
         "projectName": "LibraryApp_e0e5dd41",
         "vmArgs": "--module-path \"D:/git/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-      },
+      }
     ]
 
 }
