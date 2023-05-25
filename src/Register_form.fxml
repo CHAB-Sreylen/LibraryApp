@@ -6,78 +6,78 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane layoutX="300.0" layoutY="36.0" prefHeight="550.0" prefWidth="390.0" style="-fx-background-color: #2b98d9;">
+      <BorderPane layoutX="255.0" layoutY="25.0" prefHeight="550.0" prefWidth="390.0" style="-fx-background-color: #2b98d9;">
          <top>
-            <Label prefHeight="46.0" prefWidth="220.0" text="Register for new student" textFill="WHITE" BorderPane.alignment="CENTER">
+            <Label prefHeight="46.0" prefWidth="242.0" text="Register for a new student" textFill="WHITE" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Freehand" size="20.0" />
                </font>
             </Label>
          </top>
       </BorderPane>
-      <TextField layoutX="355.0" layoutY="112.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
+      <TextField layoutX="310.0" layoutY="101.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="355.0" layoutY="182.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
+      <TextField layoutX="310.0" layoutY="171.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="355.0" layoutY="252.0" prefHeight="20.0" prefWidth="290.0" promptText="password">
+      <TextField layoutX="310.0" layoutY="241.0" prefHeight="20.0" prefWidth="290.0" promptText="password">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="355.0" layoutY="324.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
+      <TextField layoutX="310.0" layoutY="313.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="355.0" layoutY="396.0" prefHeight="20.0" prefWidth="290.0" promptText="day/month/year">
+      <TextField layoutX="310.0" layoutY="385.0" prefHeight="20.0" prefWidth="290.0" promptText="day/month/year">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="355.0" layoutY="469.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
+      <TextField layoutX="310.0" layoutY="458.0" prefHeight="20.0" prefWidth="290.0" promptText="username">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField accessibleRole="BUTTON" alignment="CENTER" layoutX="428.0" layoutY="525.0" prefHeight="40.0" prefWidth="145.0" promptText="username" style="-fx-background-color: #36da54;" text="Sign up">
+      <TextField accessibleRole="BUTTON" alignment="CENTER" layoutX="383.0" layoutY="514.0" prefHeight="40.0" prefWidth="145.0" promptText="username" style="-fx-background-color: #36da54;" text="Sign up">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="367.0" layoutY="87.0" prefHeight="8.0" prefWidth="87.0" text="Username" textFill="#fcfcfc">
+      <Label layoutX="322.0" layoutY="76.0" prefHeight="8.0" prefWidth="87.0" text="Username" textFill="#fcfcfc">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="367.0" layoutY="157.0" prefHeight="8.0" prefWidth="87.0" text="Email" textFill="WHITE">
+      <Label layoutX="322.0" layoutY="146.0" prefHeight="8.0" prefWidth="87.0" text="Email" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="367.0" layoutY="227.0" prefHeight="8.0" prefWidth="87.0" text="Password" textFill="WHITE">
+      <Label layoutX="322.0" layoutY="216.0" prefHeight="8.0" prefWidth="87.0" text="Password" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="367.0" layoutY="298.0" prefHeight="25.0" prefWidth="128.0" text="School/University" textFill="WHITE">
+      <Label layoutX="322.0" layoutY="287.0" prefHeight="25.0" prefWidth="128.0" text="School/University" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="367.0" layoutY="371.0" prefHeight="25.0" prefWidth="128.0" text="Date of birth" textFill="WHITE">
+      <Label layoutX="322.0" layoutY="360.0" prefHeight="25.0" prefWidth="128.0" text="Date of birth" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="367.0" layoutY="444.0" prefHeight="25.0" prefWidth="128.0" text="Department" textFill="WHITE">
+      <Label layoutX="322.0" layoutY="433.0" prefHeight="25.0" prefWidth="128.0" text="Department" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
