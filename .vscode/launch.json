@@ -12,7 +12,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path \"D:/project1/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:?Users?L-G3?Documents?LibraryApp?lib?javafx-sdk-20?lib\" --add-modules javafx.controls,javafx.fxml"
         },
 
         {
