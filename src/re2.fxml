@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage_controller">
    <children>
       <Text layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
          <font>
@@ -220,7 +220,7 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <Button fx:id="borrowbutton" layoutX="231.0" layoutY="305.0" mnemonicParsing="false" onAction="#borrowbuttonOnAction" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
+      <Button fx:id="borrowbutton1" layoutX="231.0" layoutY="305.0" mnemonicParsing="false" onAction="#borrowbutton1OnAction" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
       <Button layoutX="351.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
       <Button layoutX="465.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
       <Button layoutX="578.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
@@ -328,8 +328,6 @@
       <Button layoutX="578.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
       <Button layoutX="688.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
       <Button layoutX="805.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: #0dff00;" text="Borrow" textFill="WHITE" />
-      <Text fx:id="borrowword2" layoutX="81.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="borrowword1" layoutX="104.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Label fx:id="word" layoutX="19.0" layoutY="470.0" prefHeight="18.0" prefWidth="170.0" textFill="RED" />
    </children>
    <opaqueInsets>
