@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="borrowmessage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="borrowmessage" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage_controller">
    <children>
       <Text layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
          <font>
@@ -325,7 +325,7 @@
       <Button layoutX="553.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
       <Button layoutX="436.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
       <Button layoutX="317.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
-      <Button fx:id="borrowbutton1" layoutX="200.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
+      <Button fx:id="borrowbutton1" layoutX="200.0" layoutY="306.0" mnemonicParsing="false" onAction="#borrowbutton1OnAction" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
       <Button layoutX="787.0" layoutY="306.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #00ff27;" text="Borrow" textFill="WHITE" />
    </children>
    <opaqueInsets>

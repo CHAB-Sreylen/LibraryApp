@@ -18,6 +18,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -65,16 +66,15 @@ public class loginpage_controller implements Initializable {
         }else{
             try{ 
                 Class.forName("com.mysql.jdbc.Driver"); 
-                con = DriverManager.getConnection("jdbc:mysql://localhost:/library","root","");       
-                // pst = con.prepareStatement("SELECT * FROM students WHERE username=? AND password=?"); 
+                con = DriverManager.getConnection("jdbc:mysql://localhost:/library","root","");        
                 pst = con.prepareStatement("SELECT * FROM user WHERE username=? AND password=?");  
                 pst.setString(1, userName); 
                 pst.setString(2, password); 
-                rs = pst.executeQuery(); 
+                rs = pst.executeQuery(); //reset
                 if(rs.next()){  
                     pst = con.prepareStatement("select id,username,password from user"); 
                     JOptionPane.showMessageDialog(null, "login success welcome "+userName);   
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("List_Book.fxml")); 
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("re2.fxml")); 
                     root = loader.load(); 
                     stage = (Stage)((Node)event.getSource()).getScene().getWindow(); 
                     scene = new Scene(root); 
@@ -92,6 +92,15 @@ public class loginpage_controller implements Initializable {
             }
         }
     }
+    // @FXML
+    // private Circle addbookbutton;
+    // public void addbookbuttonOnAction(ActionEvent event)throws IOException{
+    //     root = FXMLLoader.load(getClass().getResource("add_book.fxml"));
+    //     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    //     scene = new Scene(root);
+    //     stage.setScene(scene);
+    //     stage.show();
+    // }
     public void borrowbutton1OnAction(ActionEvent event)throws IOException{
         root = FXMLLoader.load(getClass().getResource("Borrow_link.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -99,6 +108,15 @@ public class loginpage_controller implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    // @FXML 
+    // private Button new_studentbutton;
+    // public void new_studentbuttonOnAction(ActionEvent event)throws IOException{
+    //     root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
+    //     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    //     scene = new Scene(root);
+    //     stage.setScene(scene);
+    //     stage.show();
+    // }
     @FXML
     private Button CancelButton;
     public void CancelButtonOnAction(ActionEvent event)throws IOException{
@@ -106,3 +124,4 @@ public class loginpage_controller implements Initializable {
          stage.close();
     }
 }
+
