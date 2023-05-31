@@ -25,12 +25,12 @@ public class Book {
         return id;
     }
 
-    public String getId() {
+    public String getid() {
         return id.get();
     }
 
-    public void setId(String newId) {
-        id.set(newId);
+    public void setid(String newid) {
+        id.set(newid);
     }
 
     public StringProperty titleProperty() {
