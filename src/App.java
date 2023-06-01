@@ -12,6 +12,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+<<<<<<< HEAD
 
         Parent root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
         //stage.initStyle(StageStyle.UNDECORATED);
@@ -21,6 +22,13 @@ public class App extends Application {
         
 
         stage.initStyle(StageStyle.UNDECORATED);
+=======
+
+        Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+
+        // stage.initStyle(StageStyle.UNDECORATED);
+        // stage.setTitle("Welcome to Library App");
+>>>>>>> 768e92817a2b1f507a4ad9d7812f7b225437c643
 
         stage.setScene(new Scene(root));
         stage.show();
