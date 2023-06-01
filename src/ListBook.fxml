@@ -28,7 +28,7 @@
       <Rectangle height="24.0" layoutX="211.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="689.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
-               <stops>
+               <stops></stops>
                   <Stop>
                      <color>
                         <Color red="0.127017542719841" green="0.1648070216178894" blue="0.378947377204895" />
