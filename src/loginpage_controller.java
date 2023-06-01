@@ -64,6 +64,34 @@ public class loginpage_controller implements Initializable {
         String password = passwordtextField.getText();
         if (userName.equals("") && password.equals("")) {
             LoginwordButton.setText("Please enter username and password.");
+<<<<<<< HEAD
+        }else{
+            try{ 
+                Class.forName("com.mysql.jdbc.Driver"); 
+                con = DriverManager.getConnection("jdbc:mysql://localhost:/library","root","");        
+                pst = con.prepareStatement("SELECT * FROM user WHERE username=? AND password=?");  
+                pst.setString(1, userName); 
+                pst.setString(2, password); 
+                rs = pst.executeQuery(); //reset
+                if(rs.next()){  
+                    pst = con.prepareStatement("select id,username,password from user"); 
+                    JOptionPane.showMessageDialog(null, "login success welcome "+userName);   
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("ListBook.fxml")); 
+                    root = loader.load(); 
+                    stage = (Stage)((Node)event.getSource()).getScene().getWindow(); 
+                    scene = new Scene(root); 
+                    stage.setScene(scene); 
+                    stage.centerOnScreen(); 
+                    stage.show(); 
+                }else{ 
+                    JOptionPane.showMessageDialog(null, "Login failed");    
+                    usernametextField.setText(""); 
+                    passwordtextField.setText(""); 
+                    usernametextField.requestFocus(); 
+                }  
+            }catch(Exception e){ 
+                System.out.println("error"); 
+=======
         } else {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -90,6 +118,7 @@ public class loginpage_controller implements Initializable {
                 }
             } catch (Exception e) {
                 System.out.println("error");
+>>>>>>> 768e92817a2b1f507a4ad9d7812f7b225437c643
             }
         }
     }
@@ -126,5 +155,14 @@ public class loginpage_controller implements Initializable {
     public void CancelButtonOnAction(ActionEvent event) throws IOException {
         Stage stage = (Stage) CancelButton.getScene().getWindow();
         stage.close();
+    }
+    @FXML
+    private Button registernewstu;
+    public void registernewstuOnAction(ActionEvent event)throws IOException{
+        root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

@@ -1,4 +1,15 @@
 import java.io.IOException;
+<<<<<<< HEAD
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import javafx.scene.Node;
+=======
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -33,6 +44,7 @@ public class ListBookController implements Initializable {
     PreparedStatement pst;
     ResultSet rs;
     int myIndex, id;
+>>>>>>> 768e92817a2b1f507a4ad9d7812f7b225437c643
 
     @FXML
     private TableColumn<Book, String> Authorcolumn;
@@ -175,6 +187,15 @@ public class ListBookController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         Connect();
         Table();
+    }
+    @FXML
+    private Button registernewstu;
+    public void registernewstuOnAction(ActionEvent event)throws IOException{
+        Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene((Parent) root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

@@ -13,6 +13,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
+        stage.initStyle(StageStyle.UNDECORATED);
+
         Parent root = FXMLLoader.load(getClass().getResource("add_book.fxml"));
 
         // stage.initStyle(StageStyle.UNDECORATED);

@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -120,8 +121,16 @@
             <TableColumn fx:id="year" prefWidth="106.4000244140625" text="Year" />
         </columns>
       </TableView>
+<<<<<<< HEAD
+      <Button fx:id="registernewstu" layoutX="7.0" layoutY="377.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2b98d9;" text="Register for new student">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+=======
       <Button layoutX="624.0" layoutY="17.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" text="Delete" />
       <Circle fill="#ff6f1f" layoutX="616.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+>>>>>>> 768e92817a2b1f507a4ad9d7812f7b225437c643
    </children>
    <opaqueInsets>
       <Insets />
