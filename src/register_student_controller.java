@@ -1,5 +1,5 @@
 import java.beans.BeanProperty;
-import java.io.IOException;git 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,10 +25,6 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 public class register_student_controller implements Initializable {
-
-    public void initialize(URL url, ResourceBundle resourceBundle){// initialize the table value
-    
-    }
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -36,6 +32,11 @@ public class register_student_controller implements Initializable {
     Connection con;
     PreparedStatement pst;
     ResultSet rs;
+
+    public void initialize(URL url, ResourceBundle resourceBundle){// initialize the table value
+    
+    }
+
     // @FXML
     // private TextField stu_usernameTextField;
     // @FXML
@@ -98,25 +99,25 @@ public class register_student_controller implements Initializable {
         // String Department = departmenttextField.getText();
          
         if(username.equals("") && password.equals("")){
-            Labeled signupmessagelabel;
-            signupmessagelabel.setText("Please enter the information.");
+            // Labeled signupmessagelabel;
+            signupmessage.setText("Please enter the information.");
         }else{
             try{ 
                 Class.forName("com.mysql.jdbc.Driver"); 
                 con = DriverManager.getConnection("jdbc:mysql://localhost:/library","root","");       
                 // pst = con.prepareStatement("SELECT * FROM students WHERE username=? AND password=?"); 
-                pst = con.prepareStatement("INSERT INTO student (id,fullname,username,password,school,department(?,?,?,?,?,?)");  
-                pst.setString(1, studentId); 
-                pst.setString(2, fullname); 
-                pst.setString(3, username); 
-                pst.setString(4, password); 
-                pst.setString(5, schoolname); 
-                pst.setString(6, department); 
-                rs = pst.executeQuery(); 
-                if(rs.next()){  
+                pst = con.prepareStatement("INSERT INTO student (fullname,username,password,school,department) value(?,?,?,?,?)");  
+                // pst.setString(1, studentId); 
+                pst.setString(1, fullName); 
+                pst.setString(2, username); 
+                pst.setString(3, password); 
+                pst.setString(4, schoolname); 
+                pst.setString(5, Department); 
+                pst.executeUpdate(); 
+                // if(rs.next()){  
                     // pst = con.prepareStatement("select id,username,password from user"); 
                     JOptionPane.showMessageDialog(null, "login success welcome "+username);   
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("re2.fxml")); 
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("ListBook.fxml")); 
                     root = loader.load(); 
                     stage = (Stage)((Node)event.getSource()).getScene().getWindow(); 
                     scene = new Scene(root); 
@@ -133,7 +134,7 @@ public class register_student_controller implements Initializable {
                         // stage.setScene(scene); 
                         // stage.centerOnScreen(); 
                         // stage.show(); 
-                        }
+                        // }
                 // }else{ 
                 //     JOptionPane.showMessageDialog(null, "Login failed");    
                 //     usernametextField.setText(""); 

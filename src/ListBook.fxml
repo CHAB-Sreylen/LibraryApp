@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -122,6 +123,11 @@
             <TableColumn prefWidth="113.5999755859375" text="Author" />
         </columns>
       </TableView>
+      <Button fx:id="registernewstu" layoutX="7.0" layoutY="377.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2b98d9;" text="Register for new student">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
    </children>
    <opaqueInsets>
       <Insets />
