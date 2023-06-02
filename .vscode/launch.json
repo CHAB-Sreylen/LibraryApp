@@ -6,7 +6,6 @@
     "configurations": [
         {
             "type": "java",
-<<<<<<< HEAD
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
@@ -59,28 +58,6 @@
             "mainClass": "test",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
-=======
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_3c1aea4",
-            "vmArgs": "--module-path \"D:\\project1\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:\\project1\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path \"D:\\project1\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> 2931bf1c31850247ab0e1607bc8ebf01d74299f2
         }
     ]
 }
