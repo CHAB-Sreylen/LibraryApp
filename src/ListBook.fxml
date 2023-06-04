@@ -84,26 +84,6 @@
          <font>
             <Font size="13.0" />
          </font></Text>
-      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My categories" wrappingWidth="94.99999999999989">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Text>
-      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="94.99999999999989">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Text>
-      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting" wrappingWidth="94.99999999999989">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Text>
-      <Text accessibleRole="BUTTON" layoutX="20.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" wrappingWidth="94.99999999999989">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Text>
       <Circle fill="WHITE" layoutX="37.0" layoutY="86.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
       <Text accessibleRole="TEXT_FIELD" fill="#807575" layoutX="729.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
          <font>
@@ -121,11 +101,13 @@
             <TableColumn fx:id="year" prefWidth="106.4000244140625" text="Year" />
         </columns>
       </TableView>
-      <Button fx:id="registernewstu" layoutX="7.0" layoutY="377.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2b98d9;" text="Register for new student">
+      <Button fx:id="registernewstu" layoutX="15.0" layoutY="221.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
          <effect>
             <Glow />
          </effect>
       </Button>
+      <Button layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
+      <Button layoutX="15.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />
