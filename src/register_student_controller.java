@@ -78,6 +78,18 @@ public class register_student_controller implements Initializable {
     @FXML
     private TextField stu_username;
 
+    @FXML
+    private Button cancel_register;
+
+    public void cancel_registerOnAction(ActionEvent event) throws IOException {
+        Object root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene((Parent) root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
     public void signupbuttonOnAction(ActionEvent event) throws IOException {
         String username = stu_username.getText();
         String password = stu_password.getText();
