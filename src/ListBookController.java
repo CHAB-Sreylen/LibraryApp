@@ -61,7 +61,7 @@ public class ListBookController implements Initializable {
 
     @FXML
     void AddBook(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("add_book.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("add_book2.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -185,6 +185,7 @@ public class ListBookController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         Connect();
         Table();
+        // RegisterBook
     }
 
     @FXML
