@@ -114,6 +114,7 @@ public class ListBookController implements Initializable {
             ResultSet rs = pst.executeQuery();
             {
                 while (rs.next()) {
+
                     Book bk = new Book();
                     bk.setid(rs.getString("id"));
                     bk.settitle(rs.getString("title"));
@@ -185,6 +186,18 @@ public class ListBookController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         Connect();
         Table();
+        // RegisterBook
+    }
+    
+    @FXML
+    private Button stu_list;
+
+    public void stu_listOnAction(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Student.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -197,5 +210,8 @@ public class ListBookController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    
+    
+
 
 }

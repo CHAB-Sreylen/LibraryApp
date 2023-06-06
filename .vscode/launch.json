@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -69,3 +70,46 @@
         }
     ]
 }
+=======
+
+    {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "java",
+                "name": "App",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "LibraryApp_56271be3",
+                "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
+
+            },
+            {
+                "type": "java",
+                "name": "App",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "LibraryApp_3c1aea4",
+                "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
+            },
+            {
+                "type": "java",
+                "name": "App",
+                "request": "launch",
+                "mainClass": "App",
+                "projectName": "LibraryApp_2ac5920",
+                "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
+            },
+            {
+                "type": "java",
+                "name": "Current File",
+                "request": "launch",
+                "mainClass": "${file}",
+                "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
+            }
+        ]
+    }
+>>>>>>> 612ea2379b984864b481f099896e959be8dae842

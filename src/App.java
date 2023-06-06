@@ -3,7 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+// import javafx.stage.StageStyle;
 
 public class App extends Application {
     public static void main(String[] args) throws Exception {
@@ -13,9 +13,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        stage.initStyle(StageStyle.UNDECORATED);
+        //stage.initStyle(StageStyle.UNDECORATED);
 
-        Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Listbook.fxml"));
 
         // stage.initStyle(StageStyle.UNDECORATED);
         // stage.setTitle("Welcome to Library App");

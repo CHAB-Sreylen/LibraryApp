@@ -7,80 +7,86 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register_student_controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register_student_controller">
    <children>
-      <BorderPane layoutX="260.0" layoutY="4.0" prefHeight="567.0" prefWidth="390.0" style="-fx-background-color: #2b98d9;">
+      <BorderPane prefHeight="567.0" prefWidth="390.0" style="-fx-background-color: #202a5e;">
          <top>
-            <Label prefHeight="39.0" prefWidth="242.0" text="Register for a new student" textFill="WHITE" BorderPane.alignment="CENTER">
+            <Label prefHeight="46.0" prefWidth="144.0" text="Students Details" textFill="WHITE" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Freehand" size="20.0" />
                </font>
             </Label>
          </top>
-         <bottom>
-            <Button fx:id="signupbutton" mnemonicParsing="false" onAction="#signupbuttonOnAction" text="signup" BorderPane.alignment="CENTER" />
-         </bottom>
       </BorderPane>
-      <TextField fx:id="stu_username" layoutX="310.0" layoutY="101.0" onAction="#signupbuttonOnAction" prefHeight="20.0" prefWidth="290.0" promptText="username">
+      <TextField fx:id="stu_username" layoutX="49.0" layoutY="85.0" onAction="#cancel_registerOnAction" prefHeight="20.0" prefWidth="290.0" promptText="username">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="stu_id" layoutX="310.0" layoutY="171.0" prefHeight="20.0" prefWidth="290.0" promptText="id">
+      <TextField fx:id="stu_id" layoutX="49.0" layoutY="155.0" prefHeight="20.0" prefWidth="290.0" promptText="id">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="stu_password" layoutX="310.0" layoutY="241.0" prefHeight="20.0" prefWidth="290.0" promptText="password">
+      <TextField fx:id="stu_password" layoutX="49.0" layoutY="225.0" prefHeight="20.0" prefWidth="290.0" promptText="password">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="school_name" layoutX="310.0" layoutY="313.0" prefHeight="20.0" prefWidth="290.0" promptText="school_name">
+      <TextField fx:id="school_name" layoutX="49.0" layoutY="297.0" prefHeight="20.0" prefWidth="290.0" promptText="school_name">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="fullname" layoutX="310.0" layoutY="385.0" prefHeight="20.0" prefWidth="290.0" promptText="name">
+      <TextField fx:id="fullname" layoutX="49.0" layoutY="369.0" prefHeight="20.0" prefWidth="290.0" promptText="name">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="department" layoutX="310.0" layoutY="458.0" prefHeight="20.0" prefWidth="290.0" promptText="Department">
+      <TextField fx:id="department" layoutX="49.0" layoutY="442.0" prefHeight="20.0" prefWidth="290.0" promptText="Department">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="322.0" layoutY="76.0" prefHeight="8.0" prefWidth="87.0" text="Username" textFill="#fcfcfc">
+      <Label layoutX="61.0" layoutY="60.0" prefHeight="8.0" prefWidth="87.0" text="Username" textFill="#fcfcfc">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="146.0" prefHeight="8.0" prefWidth="87.0" text="ID" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="130.0" prefHeight="8.0" prefWidth="87.0" text="ID" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="216.0" prefHeight="8.0" prefWidth="87.0" text="Password" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="200.0" prefHeight="8.0" prefWidth="87.0" text="Password" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="287.0" prefHeight="25.0" prefWidth="128.0" text="School/University" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="271.0" prefHeight="25.0" prefWidth="128.0" text="School/University" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="360.0" prefHeight="25.0" prefWidth="128.0" text="Full name" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="344.0" prefHeight="25.0" prefWidth="128.0" text="Full name" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="322.0" layoutY="433.0" prefHeight="25.0" prefWidth="128.0" text="Department" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="417.0" prefHeight="25.0" prefWidth="128.0" text="Department" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="signupmessage" layoutX="311.0" layoutY="50.0" prefHeight="25.0" prefWidth="290.0" textFill="RED" />
+      <Label fx:id="signupmessage" layoutX="50.0" layoutY="34.0" prefHeight="25.0" prefWidth="290.0" textFill="RED" />
+      <Button fx:id="signupbutton" layoutX="47.0" layoutY="509.0" mnemonicParsing="false" onAction="#signupbuttonOnAction" prefHeight="25.0" prefWidth="115.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel_register" layoutX="225.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancel_registerOnAction" prefHeight="25.0" prefWidth="115.0" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>
