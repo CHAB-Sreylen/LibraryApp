@@ -72,7 +72,6 @@ public class StudentList {
         password.set(newpassword);
     }
     
-
     public StringProperty schoolProperty() {
         return school;
     }

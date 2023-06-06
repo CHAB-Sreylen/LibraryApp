@@ -1,3 +1,4 @@
+
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -17,7 +18,15 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml",
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml",
+            
         },
         {
             "type": "java",
@@ -29,17 +38,9 @@
         },
         {
             "type": "java",
-            "name": "ConnectDB",
+            "name": "Current File",
             "request": "launch",
-            "mainClass": "samples.db.ConnectDB",
-            "projectName": "LibraryApp_f194bb20",
-            "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "CreateProductTable",
-            "request": "launch",
-            "mainClass": "samples.db.CreateProductTable",
+            "mainClass": "${file}",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml"
         },
@@ -66,6 +67,6 @@
             "mainClass": "test",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:\\len\\LibraryApp\\lib\\javafx-sdk-20\\lib --add-modules javafx.controls,javafx.fxml"
-        }
+        },
     ]
 }
