@@ -73,29 +73,11 @@
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         @FXML
         private Button stu_list;
     
         public void stu_listOnAction(ActionEvent event) throws IOException {
-            Object root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+            Object root = FXMLLoader.load(getClass().getResource("Listbook.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene((Parent) root);
             stage.setScene(scene);

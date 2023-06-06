@@ -23,8 +23,8 @@
             <TableColumn fx:id="schoolcolumn" minWidth="0.0" prefWidth="132.0" text="School" />
             <TableColumn fx:id="Departmentcolumn" minWidth="0.0" prefWidth="113.0" text="Department" />
             <TableColumn fx:id="titlecolumn" minWidth="0.0" prefWidth="158.0" text="BookTitle" />
-            <TableColumn fx:id="Borrowedcolumn1" minWidth="0.0" prefWidth="120.0" text="Borrowed" />
-            <TableColumn fx:id="laonedcolumn" minWidth="0.0" prefWidth="124.0" text="Laoned" />
+            <TableColumn fx:id="Laonedcolumn1" minWidth="0.0" prefWidth="120.0" text="Laoned" />
+            <TableColumn fx:id="Returnedcolumn" minWidth="0.0" prefWidth="124.0" text="Returned" />
         </columns>
       </TableView>
       <Button fx:id="back" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
