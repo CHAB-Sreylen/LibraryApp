@@ -101,13 +101,13 @@
             <TableColumn fx:id="year" prefWidth="106.4000244140625" text="Year" />
         </columns>
       </TableView>
-      <Button fx:id="registernewstu" layoutX="15.0" layoutY="221.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
+      <Button fx:id="registernewstu" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
          <effect>
             <Glow />
          </effect>
       </Button>
-      <Button layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
-      <Button layoutX="15.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
+      <Button fx:id="stu_list" layoutX="15.0" layoutY="132.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
+      <Button fx:id="logout_acc" layoutX="15.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />

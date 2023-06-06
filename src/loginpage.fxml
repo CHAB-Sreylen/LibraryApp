@@ -11,7 +11,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage_controller">
    <left>
-      <AnchorPane prefHeight="0.0" prefWidth="450.0" style="-fx-background-color: #b8b8ff;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="0.0" prefWidth="450.0" style="-fx-background-color: #1836a4;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="73.0" layoutY="207.0" text="Library App" textFill="WHITE">
                <font>
@@ -49,12 +49,12 @@
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#LogindButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Login" textFill="WHITE">
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#LogindButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #1836a4;" text="Login" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #9381ff;" text="Cancel" textFill="WHITE">
+            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #1836a4;" text="Cancel" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
