@@ -15,7 +15,11 @@ public class App extends Application {
 
         // stage.initStyle(StageStyle.UNDECORATED); 3q
 
+<<<<<<< HEAD
         Parent root = FXMLLoader.load(getClass().getResource("LaonForm.fxml"));
+=======
+        Parent root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
+>>>>>>> 8d6a6dbd85992e3e3f17361bb15748560b4e1ab9
 
         // stage.initStyle(StageStyle.UNDECORATED);
         // stage.setTitle("Welcome to Library App");
