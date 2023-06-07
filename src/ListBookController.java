@@ -60,6 +60,9 @@ public class ListBookController implements Initializable {
     private TableView<Book> table;
 
     @FXML
+    private Button loanandreturn;
+
+    @FXML
     void AddBook(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("add_book2.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -210,5 +213,12 @@ public class ListBookController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-
+   
+    public void loanandreturnOnAction(ActionEvent event) throws IOException {
+        Object root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene((Parent) root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

@@ -91,7 +91,6 @@
       </Text>
       <Button layoutX="233.0" layoutY="17.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #ffffff;" text="Add book" />
       <Button layoutX="357.0" layoutY="17.0" mnemonicParsing="false" onAction="#UpdateBook" style="-fx-background-color: #ffffff;" text="Update book" />
-      <Button layoutX="489.0" layoutY="17.0" mnemonicParsing="false" onAction="#RegisterBook" style="-fx-background-color: #ffffff;" text="Register book" />
       <TableView fx:id="table" layoutX="185.0" layoutY="90.0" prefHeight="452.0" prefWidth="708.0">
         <columns>
           <TableColumn fx:id="BIDcolumn" prefWidth="73.60000610351562" text="BID" />
@@ -100,7 +99,7 @@
             <TableColumn fx:id="year" prefWidth="106.4000244140625" text="Year" />
         </columns>
       </TableView>
-      <Button layoutX="624.0" layoutY="17.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
+      <Button layoutX="622.0" layoutY="15.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
       <Circle fill="#ff6f1f" layoutX="616.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Button fx:id="registernewstu" layoutX="21.0" layoutY="188.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
          <effect>
@@ -109,8 +108,14 @@
       </Button>
       <Button fx:id="stu_list1" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
       <Button fx:id="logout_acc" layoutX="21.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
+      <Button fx:id="registernewstu" layoutX="21.0" layoutY="188.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
       <Button fx:id="stu_list" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
       <Button fx:id="logout_acc" layoutX="21.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
+      <Button fx:id="loanandreturn" layoutX="484.0" layoutY="15.0" mnemonicParsing="false" onAction="#loanandreturnOnAction" style="-fx-background-color: #ffffff;" text="Laon and Return List" />
    </children>
    <opaqueInsets>
       <Insets />

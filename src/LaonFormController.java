@@ -17,6 +17,31 @@ public class LaonFormController {
     private Stage CancelButton;
     private Scene scene;
 
+    @FXML
+    private Button Delete2;
+
+    @FXML
+    private Button LaonFormButton;
+
+    @FXML
+    private Button ReturnFormButton;
+
+    @FXML
+    private Button ReturnListButton;
+
+    @FXML
+    private Button backstupage;
+
+    @FXML
+    void backstupageOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchtoLaonForm(ActionEvent event) {
+
+    }
+
     public void switchtoLoanList(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
         CancelButton = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -24,4 +49,5 @@ public class LaonFormController {
         CancelButton.setScene(scene);
         CancelButton.show();
     }
+    
 }

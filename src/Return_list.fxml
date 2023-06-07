@@ -93,7 +93,7 @@
       <Button layoutX="233.0" layoutY="17.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #ffffff;" text="Add book" />
       <Button layoutX="357.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Update book" />
       <Button layoutX="489.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Laon and Return LIst" />
-      <Button layoutX="638.0" layoutY="17.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
+      <Button layoutX="648.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #ffffff;" text="Delete" />
       <Circle fill="#ff6f1f" layoutX="632.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Button fx:id="LaonFormButton" layoutX="21.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchtoLaonForm" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Loan Form" textFill="WHITE">
          <effect>
