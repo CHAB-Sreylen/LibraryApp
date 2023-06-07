@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -10,55 +6,31 @@
     "configurations": [
         {
             "type": "java",
-<<<<<<< HEAD
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_56271be3",
-            "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-
-=======
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-<<<<<<< HEAD
-            "projectName": "LibraryApp_3c1aea4",
-            "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-=======
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
         },
         {
             "type": "java",
-            "name": "App",
+            "name": "ConnectDB",
             "request": "launch",
-<<<<<<< HEAD
-            "mainClass": "App",
-            "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-=======
             "mainClass": "samples.db.ConnectDB",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
         },
         {
             "type": "java",
-            "name": "Current File",
+            "name": "CreateProductTable",
             "request": "launch",
-<<<<<<< HEAD
-            "mainClass": "${file}",
-            "vmArgs": "--module-path \"D:\\Project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-=======
             "mainClass": "samples.db.CreateProductTable",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
@@ -86,7 +58,6 @@
             "mainClass": "test",
             "projectName": "LibraryApp_f194bb20",
             "vmArgs": "--module-path C:/Users/L-G3/Documents/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
         }
     ]
 }
