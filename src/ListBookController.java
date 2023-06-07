@@ -210,8 +210,6 @@ public class ListBookController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    
-    
 
 
 }

@@ -15,11 +15,7 @@ public class App extends Application {
 
         // stage.initStyle(StageStyle.UNDECORATED);
 
-<<<<<<< HEAD
-        Parent root = FXMLLoader.load(getClass().getResource("add_book2.fxml"));
-=======
-        Parent root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
->>>>>>> 0c78511453374eb426221d6288778039da7a9f59
+        Parent root = FXMLLoader.load(getClass().getResource("student.fxml"));
 
         // stage.initStyle(StageStyle.UNDECORATED);
         // stage.setTitle("Welcome to Library App");

@@ -16,23 +16,22 @@
             <Font name="Bauhaus 93" size="36.0" />
          </font>
       </Button>
-      <TableView layoutY="72.0" prefHeight="531.0" prefWidth="902.0">
+      <TableView fx:id="table" layoutY="72.0" prefHeight="531.0" prefWidth="902.0">
         <columns>
           <TableColumn fx:id="IDcolumn" prefWidth="126.0" text="ID" />
-          <TableColumn fx:id="Fullnamecolumn" prefWidth="128.0" text="Fullname" />
-            <TableColumn fx:id="schoolcolumn" minWidth="0.0" prefWidth="132.0" text="School" />
-            <TableColumn fx:id="Departmentcolumn" minWidth="0.0" prefWidth="113.0" text="Department" />
-            <TableColumn fx:id="titlecolumn" minWidth="0.0" prefWidth="158.0" text="BookTitle" />
-            <TableColumn fx:id="Laonedcolumn1" minWidth="0.0" prefWidth="120.0" text="Laoned" />
-            <TableColumn fx:id="Returnedcolumn" minWidth="0.0" prefWidth="124.0" text="Returned" />
+          <TableColumn fx:id="Fullnamecolumn" prefWidth="177.0" text="Fullname" />
+            <TableColumn fx:id="usernamecolumn" minWidth="0.0" prefWidth="172.0" text="Username" />
+            <TableColumn fx:id="Departmentcolumn" minWidth="0.0" prefWidth="122.0" text="Department" />
+            <TableColumn fx:id="schoolcolumn" minWidth="0.0" prefWidth="160.0" text="School" />
+            <TableColumn fx:id="passwordcolumn" minWidth="0.0" prefWidth="144.0" text="Password" />
         </columns>
       </TableView>
-      <Button fx:id="back" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
+      <Button fx:id="backstupage" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#backstupageOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="stu_list" layoutX="691.0" layoutY="6.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #202a5e;" text="+ Add Student" textFill="WHITE" wrapText="true">
+      <Button fx:id="addStudent" layoutX="691.0" layoutY="6.0" mnemonicParsing="false" onAction="#addStudentOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #202a5e;" text="+ Add Student" textFill="WHITE" wrapText="true">
          <font>
             <Font size="24.0" />
          </font>

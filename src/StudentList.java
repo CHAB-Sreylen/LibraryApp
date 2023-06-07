@@ -17,7 +17,7 @@ public class StudentList {
     public StudentList() {
         id = new SimpleStringProperty(this, "id");
         fullname = new SimpleStringProperty(this, "fullname");
-        username = new SimpleStringProperty(this, "usrname");
+        username = new SimpleStringProperty(this, "username");
         password = new SimpleStringProperty(this, "password");
         school = new SimpleStringProperty(this, "school");
         department = new SimpleStringProperty(this, "department");
@@ -40,7 +40,7 @@ public class StudentList {
         return fullname;
     }
 
-    public String getfullanme() {
+    public String getfullname() {
         return fullname.get();
     }
 
@@ -81,11 +81,11 @@ public class StudentList {
     }
 
     public void setschool(String newschool) {
-        password.set(newschool);
+        school.set(newschool);
     }
 
     public StringProperty departmentProperty() {
-        return password;
+        return department;
     }
 
     public String getdepartment() {
