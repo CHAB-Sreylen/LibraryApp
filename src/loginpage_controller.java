@@ -75,11 +75,8 @@ public class loginpage_controller implements Initializable {
                 if (rs.next()) {
                     pst = con.prepareStatement("select id,username,password from user");
                     JOptionPane.showMessageDialog(null, "login success welcome " + userName);
-<<<<<<< HEAD
+
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("ListBook.fxml"));
-=======
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Listbook.fxml"));
->>>>>>> 4c1ba391c9722b1169f1024328e45b9ea3d32db3
                     root = loader.load();
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
