@@ -42,9 +42,9 @@
             ResultSet rs;
             int myIndex, id;
         
-            // @FXML
-            // private TableColumn<StudentList, String> Borrowedcolumn;
-
+            @FXML
+            private Button delete1;
+        
             @FXML
             private TableColumn<StudentList,String > Departmentcolumn;
 
@@ -83,7 +83,6 @@
                     e.printStackTrace();
                 }        
             }
-        
             public void Table() {
                 Connect();
                 ObservableList<StudentList> student = FXCollections.observableArrayList();
@@ -100,10 +99,6 @@
                             StuList.setpassword(rs.getString("password"));
                             StuList.setschool(rs.getString("school"));
                             StuList.setdepartment(rs.getString("department"));
-                            // System.out.println(rs.getString("password"));
-                            // System.out.println(rs.getString("school"));
-                            // System.out.println(rs.getString("department"));
-        
                             student.add(StuList);
                         }
                     }
@@ -127,9 +122,6 @@
         
                         } else {
                             table.getSelectionModel().clearSelection();
-                            // txtBookTitle.setText("");
-                            // txtBookQuantity.setText("");
-                            // txtBookCategory.setText("");
                         }
                     });
                     return myRow;

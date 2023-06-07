@@ -1,11 +1,11 @@
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+    import java.time.LocalDate;
+    import java.time.LocalDateTime;
+    import java.time.format.DateTimeFormatter;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+    import javafx.beans.property.SimpleStringProperty;
+    import javafx.beans.property.StringProperty;
 
-public class Book {
+    public class Book {
 
     private final StringProperty id;
     private final StringProperty title;

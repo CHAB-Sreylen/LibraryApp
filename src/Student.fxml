@@ -11,7 +11,7 @@
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentList_controller">
    <children>
       <Text fill="WHITE" layoutX="218.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Book" />
-      <Button layoutX="-1.0" layoutY="-10.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="903.0" style="-fx-background-color: #202a5e;" text="Student List" textFill="WHITE">
+      <Button layoutY="-9.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="903.0" style="-fx-background-color: #202a5e;" text="Student List" textFill="WHITE">
          <font>
             <Font name="Bauhaus 93" size="36.0" />
          </font>
@@ -26,14 +26,19 @@
             <TableColumn fx:id="passwordcolumn" minWidth="0.0" prefWidth="144.0" text="Password" />
         </columns>
       </TableView>
-      <Button fx:id="backstupage" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#backstupageOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
+      <Button fx:id="backstupage" layoutY="13.0" mnemonicParsing="false" onAction="#backstupageOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="addStudent" layoutX="691.0" layoutY="6.0" mnemonicParsing="false" onAction="#addStudentOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #202a5e;" text="+ Add Student" textFill="WHITE" wrapText="true">
+      <Button fx:id="addStudent" layoutX="636.0" layoutY="16.0" mnemonicParsing="false" onAction="#addStudentOnAction" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #58d75d;" text=" Add Student" textFill="WHITE" wrapText="true">
          <font>
-            <Font size="24.0" />
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete1" layoutX="771.0" layoutY="17.0" mnemonicParsing="false" onAction="#delete1" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #58d75d;" text="Delete Student" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
          </font>
       </Button>
    </children>
