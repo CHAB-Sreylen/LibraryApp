@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage_controller">
+   <left>
+      <AnchorPane prefHeight="0.0" prefWidth="450.0" style="-fx-background-color: #202a5e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="73.0" layoutY="207.0" text="Library App" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="48.0" />
+               </font>
+            </Label>
+            <Line endX="128.0" layoutX="248.0" layoutY="300.0" startX="-171.0" stroke="WHITE" strokeWidth="8.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="800.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="passwordtextField" layoutX="151.0" layoutY="292.0" prefHeight="39.0" prefWidth="275.0" promptText="password">
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
+            <Label layoutX="177.0" layoutY="100.0" text="Login">
+               <font>
+                  <Font name="Verdana" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="220.0" text="Username">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="300.0" text="Password">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernametextField" layoutX="151.0" layoutY="212.0" prefHeight="39.0" prefWidth="275.0" promptText="username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" onAction="#LogindButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #202a5e;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="CancelButton" layoutX="46.0" layoutY="457.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #202a5e;" text="Close" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="LoginwordButton" alignment="CENTER" layoutX="81.0" layoutY="350.0" prefHeight="17.0" prefWidth="310.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
