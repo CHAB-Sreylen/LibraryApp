@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CreateProductTable",
+            "request": "launch",
+            "mainClass": "samples.db.CreateProductTable",
+            "projectName": "LibraryApp_e286849c"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "LibraryApp_e286849c"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
