@@ -71,13 +71,13 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="29.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+      <Text layoutX="29.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
       <TextField fx:id="stu_name" layoutX="139.0" layoutY="57.0" />
-      <Text layoutX="29.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Tile">
+      <Text layoutX="29.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
          <font>
             <Font size="17.0" />
          </font>
@@ -93,7 +93,7 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="EnterButton" layoutX="189.0" layoutY="308.0" mnemonicParsing="false" text="Enter">
+      <Button fx:id="EnterButton" layoutX="189.0" layoutY="308.0" mnemonicParsing="false" onAction="#issue" text="Enter">
          <font>
             <Font size="17.0" />
          </font>
@@ -154,12 +154,6 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Text layoutX="29.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Text>
       <DatePicker fx:id="LaonDate" layoutX="139.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" promptText="DD/MM/YYYY" />
-      <DatePicker fx:id="ReturnDate" layoutX="139.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" promptText="DD/MM/YYYY" />
    </children>
 </Pane>
