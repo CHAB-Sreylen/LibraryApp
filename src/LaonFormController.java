@@ -13,17 +13,29 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import javax.swing.JOptionPane;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 public class LaonFormController implements Initializable {
-    // private Stage CancelButton;
-    private Scene scene;
-    private Stage stage;
+
+    Connection con;
+    PreparedStatement pst;
+    ResultSet resultSet;
+
+    Stage stage;
+    Scene scene;
 
     @FXML
     private TextField BookTitle;
@@ -38,32 +50,23 @@ public class LaonFormController implements Initializable {
     private DatePicker LaonDate;
 
     @FXML
-    private DatePicker ReturnDate;
-
-    @FXML
     private TextField stu_name;
 
-    Connection con;
-    PreparedStatement pst;
-    ResultSet rs;
-
     @FXML
-    void issue() {
-        ResultSet rs = null, rs1, rs2, rs3 = null;
-        PreparedStatement pst = null, pst1, pst2, pst3 = null;
-        // ConnectToBook();
-        // ConnectToStudent();
+    void issue(ActionEvent event) {
+        ResultSet rs = null, rs1, rs2, rs3, rs4,rs5 = null;
+        PreparedStatement pst = null, pst1, pst2, pst3, pst4,pst5 = null;
 
         String reg = stu_name.getText();
         String bId = BookTitle.getText();
+        System.out.println(reg +" " + bId);
 
-        String sql1 = "select *from students where id = '" + reg + "'";
-        String sql2 = "select *from books where id = '" + bId + "'";
-        String sql = "insert into borrowlist (id,name,username,bid,booktitle,quantity,category,dateissued) value(?,?,?,?,?,?,?,?)";
+        String sql1 = "select *from student where id = '" + reg + "'";
+        String sql2 = "select *from book where id = '" + bId + "'";
+        String sql = "insert into borrowlist (id,fullname,bid,booktitle,laondate) value(?,?,?,?,?)";
 
         try {
-            ConnectToStudent();
-            // Connection con = Connectivity.ConnectDb();
+            ConnectToDatabase();
             pst1 = con.prepareStatement(sql1);
             rs1 = pst1.executeQuery();
             pst2 = con.prepareStatement(sql1);
@@ -72,23 +75,22 @@ public class LaonFormController implements Initializable {
 
                 try {
 
-                    // pst3 = conn.prepareStatement(sql4);
-                    // rs3 = pst3.executeQuery();
-                    // String numBook = rs3.getString(8);
-                    // int numOfBook = Integer.parseInt(numBook);
                     pst = con.prepareStatement(sql);
-                    {
+                    pst3 = con.prepareStatement(sql1);
+                    rs3 = pst3.executeQuery();
+                    pst4 = con.prepareStatement(sql2);
+                    rs4 = pst4.executeQuery();
+                    if(rs3.next() && rs4.next()){
 
-                        pst.setString(1, stu_name.getText());
-                        pst.setString(2, BookTitle.getText());
-
-                        // LocalDate localDate = issueDate.getValue();
-                        // pst.setString(8, localDate.toString());
-
+                        pst.setString(1, reg);
+                        pst.setString(2, rs3.getString(2));
+                        pst.setString(3,  bId);
+                        pst.setString(4, rs4.getString(2));
+                        LocalDate getDate = LaonDate.getValue();
+                        pst.setString(5, getDate.toString());
                         pst.execute();
                         pst.close();
-                        // JOptionPane.showMessageDialog(null, "Book issued Successfully");
-                        System.out.println("book issued Successfully");
+                        JOptionPane.showMessageDialog(null, "Book issued Successfully");
 
                     }
 
@@ -96,31 +98,44 @@ public class LaonFormController implements Initializable {
                     System.out.println(e.getMessage());
                 }
             } else {
-                System.out.println("Either the book ID or the Student Registration number is incorrect");
+                JOptionPane.showMessageDialog(null, "Either the book ID or the Student Registration number is incorrect");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        try {
-            ConnectToBook();
-            String sql3 = "DELETE FROM books where id = '" + bId + "'";
-            pst3 = con.prepareStatement(sql3);
-            pst3.executeUpdate(sql3);
-            pst3.close();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        } finally {
-            try {
-                rs.close();
-                pst.close();
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+        // try {
+        //     ConnectToDatabase();
+        // String sql5 = "DELETE FROM book where id = '"+bId+"'";
+        // pst5 = con.prepareStatement(sql5);
+        // pst5.executeUpdate(sql5);
+        // pst5.close();
+        // }catch(Exception e){
+        //     JOptionPane.showMessageDialog(null,e);
+        // } finally {
+        //     try {
+        //         rs.close();
+        //         pst.close();
+        //     } catch (Exception e) {
+        //         JOptionPane.showMessageDialog(null, "The book is removed from the shelf");
+        //     }
+        // }
+    }
+
+    private void ConnectToDatabase() {
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:/library","root","");
+            System.out.println("sucessfully connected to student database yayyy");
+        } catch (ClassNotFoundException ex) {
+          System.out.println("hikhik");
+        } catch (SQLException ex) {
+            ex.printStackTrace();
         }
     }
 
-    public void switchtoLoanList(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Laonlist.fxml"));
+    @FXML
+    void switchtoLoanList(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -128,16 +143,10 @@ public class LaonFormController implements Initializable {
         stage.show();
     }
 
-    public void ConnectToStudent() {
-
-    }
-
-    public void ConnectToBook() {
-
-    }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        ConnectToDatabase();
     }
+
 }
+

@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
@@ -71,19 +72,19 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="19.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+      <Text layoutX="23.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <TextField fx:id="stu_name" layoutX="139.0" layoutY="57.0" />
-      <Text layoutX="22.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Tile">
+      <TextField fx:id="stu_name" layoutX="139.0" layoutY="134.0" />
+      <Text layoutX="24.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <TextField fx:id="BookTitle" layoutX="139.0" layoutY="120.0" />
-      <Text layoutX="23.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Date">
+      <TextField fx:id="BookTitle" layoutX="100.0" layoutY="58.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="23.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Date">
          <font>
             <Font size="17.0" />
          </font>
@@ -93,7 +94,7 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <Button fx:id="EnterButton" layoutX="189.0" layoutY="308.0" mnemonicParsing="false" text="Enter">
+      <Button fx:id="EnterButton" layoutX="189.0" layoutY="308.0" mnemonicParsing="false" onAction="#ReturnBook" text="Enter">
          <font>
             <Font size="17.0" />
          </font>
@@ -159,7 +160,9 @@
             <Font size="17.0" />
          </font>
       </Text>
-      <DatePicker fx:id="LaonDate" layoutX="139.0" layoutY="185.0" prefHeight="25.0" prefWidth="149.0" promptText="DD/MM/YYYY" />
       <DatePicker fx:id="ReturnDate" layoutX="139.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" promptText="DD/MM/YYYY" />
+      <Button layoutX="236.0" layoutY="58.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TextField fx:id="LaonDate" layoutX="139.0" layoutY="186.0" />
+      <Label layoutX="93.0" layoutY="100.0" text="Borrower Information:" />
    </children>
 </Pane>
