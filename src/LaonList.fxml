@@ -87,7 +87,7 @@
       <Button layoutX="489.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Laon and Return List" />
       <Button fx:id="Delete2" layoutX="638.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
       <Circle fill="#ff6f1f" layoutX="632.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Button fx:id="LaonFormButton" layoutX="21.0" layoutY="153.0" mnemonicParsing="false" onAction="#switchtoLaonForm" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Loan Form" textFill="WHITE">
+      <Button fx:id="LaonForm" layoutX="21.0" layoutY="153.0" mnemonicParsing="false" onAction="#LaonFormOnAction" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Loan Form" textFill="WHITE">
          <effect>
             <Glow />
          </effect>
@@ -95,15 +95,15 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="ReturnListButton" layoutX="20.0" layoutY="109.0" mnemonicParsing="false" onAction="#switchtoReturnList" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Return List" textFill="WHITE">
+      <Button fx:id="ReturnList" layoutX="20.0" layoutY="109.0" mnemonicParsing="false" onAction="#ReturnListOnAction" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Return List" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button fx:id="ReturnFormButton" layoutX="20.0" layoutY="198.0" mnemonicParsing="false" onAction="#switchtoReturnForm" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Return Form" textFill="WHITE">
+      <Button fx:id="ReturnForm" layoutX="20.0" layoutY="198.0" mnemonicParsing="false" onAction="#ReturnFormOnAction" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #58d75d;" text="Return Form" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <TableView layoutX="183.0" layoutY="79.0" prefHeight="454.0" prefWidth="708.0">
+      <TableView fx:id="table" layoutX="183.0" layoutY="79.0" prefHeight="454.0" prefWidth="708.0">
          <columns>
             <TableColumn prefWidth="75.0" text="Student ID" />
             <TableColumn prefWidth="173.60003662109375" text="Student Name" />
@@ -112,7 +112,7 @@
             <TableColumn prefWidth="141.199951171875" text="Laon date" />
          </columns>
       </TableView>
-      <Button fx:id="backstupage" layoutX="20.0" layoutY="19.0" mnemonicParsing="false" onAction="#backstupageOnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
+      <Button fx:id="back1page" layoutX="20.0" layoutY="19.0" mnemonicParsing="false" onAction="#back1OnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #202a5e;" text="&lt;  Back" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
