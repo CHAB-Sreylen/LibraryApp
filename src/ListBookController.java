@@ -85,7 +85,7 @@ public class ListBookController implements Initializable {
     @FXML
     void UpdateBook(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("UpdateBook.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
