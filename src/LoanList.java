@@ -83,4 +83,7 @@ public class LoanList {
     public void setlaondate(String newlaondate) {
         laondate.set(newlaondate);
     }
+
+    public static void add(LoanList loanlist) {
+    }
 }

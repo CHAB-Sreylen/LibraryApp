@@ -13,13 +13,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        // stage.initStyle(StageStyle.UNDECORATED); 3q
+        // stage.initStyle(StageStyle.UNDECORATED);
 
-
-        Parent root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
-
-       
-
+        Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
 
         // stage.initStyle(StageStyle.UNDECORATED);
         // stage.setTitle("Welcome to Library App");

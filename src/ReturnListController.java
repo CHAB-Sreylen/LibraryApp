@@ -15,7 +15,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -27,11 +26,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputControl;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 
 public class ReturnListController implements Initializable {
-    
     private static final LoanList LoanList = null;
-    private static final ReturnList ReturnList = null;
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -41,14 +39,15 @@ public class ReturnListController implements Initializable {
     ResultSet rs;
     int myIndex, id;
 
-    @FXML
-    private Button Delete3;
 
     @FXML
-    private Button LaonForm;
+    private Button LaonForm1;
 
     @FXML
-    private Button ReturnForm;
+    private Button ReturnForm1;
+
+    @FXML
+    private Button LoanList1;
 
     @FXML
     private Button back1page;
@@ -61,9 +60,6 @@ public class ReturnListController implements Initializable {
 
     @FXML
     private TableColumn<ReturnList, String> laondatecolumn;
-
-    @FXML
-    private Button loanList;
 
     @FXML
     private TableColumn<ReturnList, String> returncolumn;
@@ -83,8 +79,6 @@ public class ReturnListController implements Initializable {
         Table();
     }
 
-    
-
     private void Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -97,9 +91,9 @@ public class ReturnListController implements Initializable {
 
     private void Table() {
         Connect();
-        ObservableList<ReturnList> returningbooklist = FXCollections.observableArrayList();
+        ObservableList<ReturnList> returningbookliist = FXCollections.observableArrayList();
         try {
-            pst = con.prepareStatement("select id,bid,booktitle,laondate,returningdate from returningbooklist");
+            pst = con.prepareStatement("select id,fullname,bid,booktitle,laondate,returningdate from returningbookliist");
             ResultSet rs = pst.executeQuery();
             {
                 while (rs.next()) {
@@ -111,15 +105,17 @@ public class ReturnListController implements Initializable {
                     Rlist.setbooktitle(rs.getString("booktitle"));
                     Rlist.setlaondate(rs.getString("laondate")); 
                     Rlist.setreturningdate(rs.getString("returningdate"));                   
-                    returningbooklist.add(ReturnList);
+                    returningbookliist.add(Rlist);
+                    System.out.println(""+rs.getString("fullname"));
                 }
             }
-            table.setItems(returningbooklist);
+            table.setItems(returningbookliist);
             stu_idcolumn.setCellValueFactory(f -> f.getValue().idProperty());
             stu_namecolumn.setCellValueFactory(f -> f.getValue().fullnameProperty());
             bidcolumn.setCellValueFactory(f -> f.getValue().bidProperty());
             bookcolumn.setCellValueFactory(f -> f.getValue().booktitleProperty());
             laondatecolumn.setCellValueFactory(f -> f.getValue().laondateProperty());
+            returncolumn.setCellValueFactory(f -> f.getValue().returningdateProperty());
             
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -142,7 +138,7 @@ public class ReturnListController implements Initializable {
 
     }
     
-    public void back1OnAction(ActionEvent event) throws IOException {
+    public void back1pageOnAction(ActionEvent event) throws IOException {
         Object root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene((Parent) root);
@@ -151,16 +147,8 @@ public class ReturnListController implements Initializable {
 
     }
 
-    // public void delete2OnAction(ActionEvent event) throws IOException {
-    //     Object root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
-    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     Scene scene = new Scene((Parent) root);
-    //     stage.setScene(scene);
-    //     stage.show();
-
-    // }
-    
-    public void LaonFormOnAction(ActionEvent event) throws IOException {
+    @FXML
+    public void LaonForm1OnAction(ActionEvent event) throws IOException {
         Object root = FXMLLoader.load(getClass().getResource("LaonForm.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene((Parent) root);
@@ -169,27 +157,28 @@ public class ReturnListController implements Initializable {
 
     }
 
-    // public void ReturnFormOnAction(ActionEvent event) throws IOException {
-    //     Object root = FXMLLoader.load(getClass().getResource("ReturnForm.fxml"));
-    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     Scene scene = new Scene((Parent) root);
-    //     stage.setScene(scene);
-    //     stage.show();
+    @FXML
+    public  void ReturnForm1OnAction(ActionEvent event) throws IOException {
+        Object root = FXMLLoader.load(getClass().getResource("ReturnForm.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene((Parent) root);
+        stage.setScene(scene);
+        stage.show();
 
-    // }
+    }
 
-    // public void ReturnListOnAction(ActionEvent event) throws IOException {
-    //     Object root = FXMLLoader.load(getClass().getResource("Return_list.fxml"));
-    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     Scene scene = new Scene((Parent) root);
-    //     stage.setScene(scene);
-    //     stage.show();
+    @FXML
+    public void LoanList1OnAction(ActionEvent event) throws IOException {
+        Object root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene((Parent) root);
+        stage.setScene(scene);
+        stage.show();
 
-    // }
+    }
 
-
+    
 }
+    
 
-
-   
-
+    
