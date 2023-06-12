@@ -150,7 +150,7 @@
             </LinearGradient>
          </textFill>
       </Button>
-      <Button fx:id="CancelButton" layoutX="49.0" layoutY="309.0" mnemonicParsing="false" onAction="#switchtoReturnList" text="Cancel">
+      <Button fx:id="CancelButton" layoutX="49.0" layoutY="309.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" text="Cancel">
          <font>
             <Font size="17.0" />
          </font>

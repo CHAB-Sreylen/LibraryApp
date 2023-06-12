@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -16,14 +15,14 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListBookController">
    <children>
-      <Text layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
+      <Text layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
       <Circle fill="#ff6f1f" layoutX="225.0" layoutY="29.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Circle fill="#ff6f1f" layoutX="347.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Circle fill="#ff6f1f" layoutX="478.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Circle fill="#ff6f1f" layoutX="456.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Rectangle accessibleRole="TEXT_FIELD" arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="716.0" layoutY="17.0" stroke="#e5e2e2" strokeType="INSIDE" width="170.0" />
       <Rectangle height="24.0" layoutX="183.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="708.0">
          <fill>
@@ -79,11 +78,6 @@
          </fill>
       </Rectangle>
       <Text fill="WHITE" layoutX="218.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Book" />
-      <Text layoutX="64.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
-         <font>
-            <Font size="13.0" />
-         </font></Text>
-      <Circle fill="WHITE" layoutX="37.0" layoutY="86.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
       <Text accessibleRole="TEXT_FIELD" fill="#807575" layoutX="729.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
          <font>
             <Font size="13.0" />
@@ -91,7 +85,7 @@
       </Text>
       <Button layoutX="233.0" layoutY="17.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #ffffff;" text="Add book" />
       <Button layoutX="357.0" layoutY="17.0" mnemonicParsing="false" onAction="#UpdateBook" style="-fx-background-color: #ffffff;" text="Update book" />
-      <Button layoutX="489.0" layoutY="17.0" mnemonicParsing="false" onAction="#RegisterBook" style="-fx-background-color: #ffffff;" text="Register book" />
+      <Button fx:id="loanandreturn" layoutX="472.0" layoutY="17.0" mnemonicParsing="false" onAction="#loanandreturnOnAction" style="-fx-background-color: #ffffff;" text="Loan and Return book" />
       <TableView fx:id="table" layoutX="185.0" layoutY="90.0" prefHeight="452.0" prefWidth="708.0">
         <columns>
           <TableColumn fx:id="BIDcolumn" prefWidth="73.60000610351562" text="BID" />
@@ -102,15 +96,8 @@
       </TableView>
       <Button layoutX="624.0" layoutY="17.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
       <Circle fill="#ff6f1f" layoutX="616.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Button fx:id="registernewstu" layoutX="21.0" layoutY="188.0" mnemonicParsing="false" onAction="#registernewstuOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Register for new student" textFill="WHITE">
-         <effect>
-            <Glow />
-         </effect>
-      </Button>
       <Button fx:id="stu_list1" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
-      <Button fx:id="logout_acc" layoutX="21.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
       <Button fx:id="stu_list" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
-      <Button fx:id="logout_acc" layoutX="21.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />

@@ -1,7 +1,10 @@
 import java.io.IOException;
 import java.net.URL;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,28 +12,40 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.util.Callback;
+
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
-
 import javax.swing.JOptionPane;
-
+import javafx.scene.control.Button;
+import javafx.scene.control.DateCell;
+import javafx.scene.control.TextField;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class ReturnFormController implements Initializable {
 
+    private static final String Node = null;
     Connection con;
     PreparedStatement pst;
     ResultSet resultSet;
 
     Stage stage;
     Scene scene;
+
 
 
     @FXML
@@ -104,6 +119,15 @@ public class ReturnFormController implements Initializable {
             pst.execute();
             JOptionPane.showMessageDialog(null, "Book returned succesfully");
             pst.close();
+        
+            // Parent root = FXMLLoader.load(getClass().getResource("Return_list.fxml"));
+            //             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            //             scene = new Scene(root);
+            //             stage.setScene(scene);
+            //             stage.centerOnScreen();
+            //             stage.show();
+
+            
             
         } catch (Exception e) {
             // JOptionPane.showMessageDialog(null, e);
@@ -130,9 +154,15 @@ public class ReturnFormController implements Initializable {
     }
 
     @FXML
-    void ReturnBook(ActionEvent event) {
+    void ReturnBook(ActionEvent event) throws IOException {
         returned();
         del();
+        Parent root = FXMLLoader.load(getClass().getResource("Return_list.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);  
+        stage.centerOnScreen();
+        stage.show();
         // updateBook();
     }
 

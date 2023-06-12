@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.net.URL;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,27 +11,33 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.util.Callback;
+
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
-
 import javax.swing.JOptionPane;
-
 import javafx.scene.control.Button;
+import javafx.scene.control.DateCell;
 import javafx.scene.control.TextField;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class LaonFormController implements Initializable {
 
+    //private static final ObservableList<LoanList> LoanList = null;
     Connection con;
     PreparedStatement pst;
     ResultSet resultSet;
@@ -51,6 +59,9 @@ public class LaonFormController implements Initializable {
 
     @FXML
     private TextField stu_name;
+    @FXML
+    private Label signupmessage1;
+
 
     @FXML
     void issue(ActionEvent event) {
@@ -91,6 +102,13 @@ public class LaonFormController implements Initializable {
                         pst.execute();
                         pst.close();
                         JOptionPane.showMessageDialog(null, "Book issued Successfully");
+                        
+                        Parent root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
+                        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                        scene = new Scene(root);
+                        stage.setScene(scene);
+                        stage.centerOnScreen();
+                        stage.show();
 
                     }
 
@@ -103,22 +121,7 @@ public class LaonFormController implements Initializable {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        // try {
-        //     ConnectToDatabase();
-        // String sql5 = "DELETE FROM book where id = '"+bId+"'";
-        // pst5 = con.prepareStatement(sql5);
-        // pst5.executeUpdate(sql5);
-        // pst5.close();
-        // }catch(Exception e){
-        //     JOptionPane.showMessageDialog(null,e);
-        // } finally {
-        //     try {
-        //         rs.close();
-        //         pst.close();
-        //     } catch (Exception e) {
-        //         JOptionPane.showMessageDialog(null, "The book is removed from the shelf");
-        //     }
-        // }
+        
     }
 
     private void ConnectToDatabase() {
@@ -146,7 +149,73 @@ public class LaonFormController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ConnectToDatabase();
+        //Table();
     }
+    public void Connect() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/library", "root", "");
+            System.out.println("Good girl!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
+    }
+    // public void EnterbuttonOnAction(ActionEvent event) throws IOException {
+        
+    
+        
+    
+
+
+
+    //     String id = stu_name.getText();
+    //     String bid = BookTitle.getText();
+    //     String loandate =LaonDate.getValue().toString();
+        
+    //     if (id.equals("") && bid.equals("")) {
+    //         // Labeled signupmessagelabel;
+    //         signupmessage1.setText("Please enter the information.");
+    //     } else {
+    //         try {
+    //             Class.forName("com.mysql.jdbc.Driver");
+    //             con = DriverManager.getConnection("jdbc:mysql://localhost:/library", "root", "");
+    //             pst = con.prepareStatement("SELECT * FROM students WHERE username=? AND
+    //             password=?");
+    //             pst = con.prepareStatement(
+    //                     "INSERT INTO borrowlist (fullname,booktitle,laondate) value(?,?,?)");
+    //             //  pst.setString(1, studentId);
+                
+    //             pst.setString(1, id);
+    //             pst.setString(2, );
+    //             pst.setDate(3, (Date) laondate);
+    //             pst.executeUpdate();
+    //             // if(rs.next()){
+    //             // pst = con.prepareStatement("select id,username,password from user");
+    //             JOptionPane.showMessageDialog(null, "Your suggession has been record " +id);
+    //             FXMLLoader loader = new FXMLLoader(getClass().getResource("LaonList.fxml"));
+    //             Parent root = loader.load();
+    //             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    //             scene = new Scene(root);
+    //             stage.setScene(scene);
+    //             stage.centerOnScreen();
+    //             stage.show();
+
+    //         } catch (Exception e) {
+    //             System.out.println("error");
+    //             System.out.println(e.getMessage());
+    //         }
+    //     }
+    // }
+    // @FXML
+    // public void CancelButtonOnAction(ActionEvent event) throws IOException {
+    //     Parent root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
+    //     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    //     scene = new Scene(root);
+    //     stage.setScene(scene);
+    //     stage.centerOnScreen();
+    //     stage.show();
+    // }
+
 
 }
 
