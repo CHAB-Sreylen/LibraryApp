@@ -10,12 +10,8 @@
             "request": "launch",
             "mainClass": "samples.db.CreateProductTable",
             "projectName": "LibraryApp_e286849c",
-<<<<<<< HEAD
             "vmArgs": "--module-path \"D:\\project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
 
-=======
-            "vmArgs": "--module-path \"D:\\git\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> 4d02377d07fc228620e1016657629c914738df4b
         },
         {
             "type": "java",
@@ -23,12 +19,8 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_e286849c",
-<<<<<<< HEAD
             "vmArgs": "--module-path \"D:\\project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
 
-=======
-            "vmArgs": "--module-path \"D:\\git\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> 4d02377d07fc228620e1016657629c914738df4b
         },
         {
             "type": "java",
@@ -52,11 +44,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_2ac5920",
-<<<<<<< HEAD
             "vmArgs": "--module-path \"D:\\project2\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
-=======
-            "vmArgs": "--module-path \"D:\\git\\LibraryApp\\lib\\javafx-sdk-20\\lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> 4d02377d07fc228620e1016657629c914738df4b
         },
         {
             "type": "java",
