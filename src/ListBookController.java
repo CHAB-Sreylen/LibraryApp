@@ -85,7 +85,7 @@ public class ListBookController implements Initializable {
     @FXML
     void UpdateBook(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("UpdateBook.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -200,13 +200,24 @@ public class ListBookController implements Initializable {
         stage.show();
     }
 
-    @FXML
-    private Button registernewstu;
+    // @FXML
+    // private Button registernewstu;
 
-    public void registernewstuOnAction(ActionEvent event) throws IOException {
-        Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene((Parent) root);
+    // public void registernewstuOnAction(ActionEvent event) throws IOException {
+    //     Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
+    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    //     Scene scene = new Scene((Parent) root);
+    //     stage.setScene(scene);
+    //     stage.show();
+    // }
+
+    @FXML
+    private Button loanandreturn;
+
+    public void loanandreturnOnAction(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("LaonList.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }

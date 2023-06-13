@@ -152,29 +152,6 @@
                 }
             }
             
-
-
-            // @FXML
-            // private Button stu_list;
-        
-            // public void stu_listOnAction(ActionEvent event) throws IOException {
-            //     Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
-            //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            //     Scene scene = new Scene((Parent) root);
-            //     stage.setScene(scene);
-            //     stage.show();
-            // }
-        
-            // @FXML
-            // private Button registernewstu;
-        
-            // public void registernewstuOnAction(ActionEvent event) throws IOException {
-            //     Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
-            //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            //     Scene scene = new Scene((Parent) root);
-            //     stage.setScene(scene);
-            //     stage.show();
-            // }
             @FXML
             private Button addStudent;
 

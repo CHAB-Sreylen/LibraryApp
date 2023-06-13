@@ -13,8 +13,12 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        // stage.initStyle(StageStyle.UNDECORATED); 3q
+        // stage.initStyle(StageStyle.UNDECORATED);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b0aecf162078ecd936d7d2e8cded59b68135842e
         Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
 
         // stage.initStyle(StageStyle.UNDECORATED);
