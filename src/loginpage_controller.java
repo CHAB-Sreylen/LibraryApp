@@ -71,7 +71,7 @@ public class loginpage_controller implements Initializable {
                 pst = con.prepareStatement("SELECT * FROM user WHERE username=? AND password=?");
                 pst.setString(1, userName);
                 pst.setString(2, password);
-                rs = pst.executeQuery(); // reset
+                rs = pst.executeQuery(); // reset .
                 if (rs.next()) {
                     pst = con.prepareStatement("select id,username,password from user");
                     JOptionPane.showMessageDialog(null, "login success welcome " + userName);
