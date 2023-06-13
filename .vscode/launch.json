@@ -9,7 +9,8 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "LibraryApp_e286849c"
+            "projectName": "LibraryApp_e286849c",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
