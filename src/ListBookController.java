@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
@@ -60,6 +61,9 @@ public class ListBookController implements Initializable {
     private TableView<Book> table;
 
     @FXML
+    private Label Name;
+
+    @FXML
     void AddBook(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("add_book2.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -93,6 +97,10 @@ public class ListBookController implements Initializable {
         stage.show();
         System.out.println("Hello world!");
 
+    }
+
+    public void displayUserName(String userName) {
+        Name.setText(userName);
     }
 
     public void Connect() {
@@ -204,11 +212,11 @@ public class ListBookController implements Initializable {
     // private Button registernewstu;
 
     // public void registernewstuOnAction(ActionEvent event) throws IOException {
-    //     Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
-    //     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    //     Scene scene = new Scene((Parent) root);
-    //     stage.setScene(scene);
-    //     stage.show();
+    // Object root = FXMLLoader.load(getClass().getResource("Register_form.fxml"));
+    // Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    // Scene scene = new Scene((Parent) root);
+    // stage.setScene(scene);
+    // stage.show();
     // }
 
     @FXML

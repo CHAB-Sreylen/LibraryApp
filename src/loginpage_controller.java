@@ -76,13 +76,23 @@ public class loginpage_controller implements Initializable {
                     pst = con.prepareStatement("select id,username,password from user");
                     JOptionPane.showMessageDialog(null, "login success welcome " + userName);
 
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Listbook.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("ListBook.fxml"));
                     root = loader.load();
+                    ListBookController sdc = loader.getController();
+                    sdc.displayUserName(userName);
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
                     stage.setScene(scene);
                     stage.centerOnScreen();
                     stage.show();
+
+                    // FXMLLoader loader = new FXMLLoader(getClass().getResource("Listbook.fxml"));
+                    // root = loader.load();
+                    // stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    // scene = new Scene(root);
+                    // stage.setScene(scene);
+                    // stage.centerOnScreen();
+                    // stage.show();
                 } else {
                     JOptionPane.showMessageDialog(null, "Login failed");
                     usernametextField.setText("");

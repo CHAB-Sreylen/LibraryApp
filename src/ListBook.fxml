@@ -2,8 +2,11 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -15,16 +18,16 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListBookController">
    <children>
-      <Text layoutX="31.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
+      <Text layoutX="21.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="83.27531433105469">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
       <Circle fill="#ff6f1f" layoutX="225.0" layoutY="29.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Circle fill="#ff6f1f" layoutX="347.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Circle fill="#ff6f1f" layoutX="456.0" layoutY="30.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
-      <Rectangle accessibleRole="TEXT_FIELD" arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="716.0" layoutY="17.0" stroke="#e5e2e2" strokeType="INSIDE" width="170.0" />
-      <Rectangle height="24.0" layoutX="183.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="708.0">
+      <Circle fill="#ff6f1f" layoutX="339.0" layoutY="29.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Circle fill="#ff6f1f" layoutX="456.0" layoutY="29.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Rectangle accessibleRole="TEXT_FIELD" arcHeight="50.0" arcWidth="25.0" fill="#e5e2e2" height="24.0" layoutX="716.0" layoutY="17.0" stroke="#e5e2e2" strokeType="INSIDE" width="161.0" />
+      <Rectangle height="24.0" layoutX="183.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="690.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -84,20 +87,30 @@
          </font>
       </Text>
       <Button layoutX="233.0" layoutY="17.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #ffffff;" text="Add book" />
-      <Button layoutX="357.0" layoutY="17.0" mnemonicParsing="false" onAction="#UpdateBook" style="-fx-background-color: #ffffff;" text="Update book" />
-      <Button fx:id="loanandreturn" layoutX="472.0" layoutY="17.0" mnemonicParsing="false" onAction="#loanandreturnOnAction" style="-fx-background-color: #ffffff;" text="Loan and Return book" />
-      <TableView fx:id="table" layoutX="185.0" layoutY="90.0" prefHeight="452.0" prefWidth="708.0">
+      <Button layoutX="355.0" layoutY="16.0" mnemonicParsing="false" onAction="#UpdateBook" style="-fx-background-color: #ffffff;" text="Update book" />
+      <Button fx:id="loanandreturn" layoutX="475.0" layoutY="15.0" mnemonicParsing="false" onAction="#loanandreturnOnAction" style="-fx-background-color: #ffffff;" text="Loan and Return book" />
+      <TableView fx:id="table" layoutX="185.0" layoutY="94.0" prefHeight="482.0" prefWidth="690.0">
         <columns>
           <TableColumn fx:id="BIDcolumn" prefWidth="73.60000610351562" text="BID" />
-            <TableColumn fx:id="Titlecolumn" prefWidth="306.4000549316406" text="Title" />
-            <TableColumn fx:id="Authorcolumn" prefWidth="219.199951171875" text="Author" />
-            <TableColumn fx:id="year" prefWidth="106.4000244140625" text="Year" />
+            <TableColumn fx:id="Titlecolumn" prefWidth="259.2000427246094" text="Title" />
+            <TableColumn fx:id="Authorcolumn" prefWidth="206.39996337890625" text="Author" />
+            <TableColumn fx:id="year" prefWidth="148.0001220703125" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="624.0" layoutY="17.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
-      <Circle fill="#ff6f1f" layoutX="616.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
+      <Button layoutX="628.0" layoutY="15.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="Delete" />
+      <Circle fill="#ff6f1f" layoutX="623.0" layoutY="28.0" radius="6.0" stroke="#ff6f1f" strokeType="INSIDE" />
       <Button fx:id="stu_list1" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
       <Button fx:id="stu_list" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#stu_listOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Student_list" textFill="WHITE" />
+      <Label fx:id="Name" layoutX="81.0" layoutY="90.0" text="Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="68.0" layoutX="21.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Downloads/Twitter%20Default%20Icons_Avis.jpeg" />
+         </image>
+      </ImageView>
    </children>
    <opaqueInsets>
       <Insets />
