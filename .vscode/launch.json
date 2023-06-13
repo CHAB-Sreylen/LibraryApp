@@ -9,7 +9,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -17,7 +17,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_c069b309",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -25,7 +25,7 @@
             "request": "launch",
             "mainClass": "samples.db.ConnectDB",
             "projectName": "LibraryApp_c069b309",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -33,7 +33,7 @@
             "request": "launch",
             "mainClass": "samples.db.CreateProductTable",
             "projectName": "LibraryApp_c069b309",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -41,7 +41,7 @@
             "request": "launch",
             "mainClass": "samples.db.InsertData",
             "projectName": "LibraryApp_c069b309",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -49,7 +49,7 @@
             "request": "launch",
             "mainClass": "samples.db.SelectData",
             "projectName": "LibraryApp_c069b309",
-            "vmArgs": "--module-path C:/Users/L-G3/LibraryApp/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
