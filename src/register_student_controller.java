@@ -1,4 +1,3 @@
-import java.beans.BeanProperty;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -10,7 +9,6 @@ import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -18,9 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextInputControl;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 

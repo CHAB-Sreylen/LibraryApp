@@ -1,9 +1,6 @@
 
-import java.io.File;
 import java.io.IOException;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -12,23 +9,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableRow;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.KeyCode;
-import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.util.Callback;
 import javafx.scene.Node;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
-import samples.db.ConnectDB;
-import samples.db.SelectData;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -71,7 +57,7 @@ public class loginpage_controller implements Initializable {
                 pst = con.prepareStatement("SELECT * FROM user WHERE username=? AND password=?");
                 pst.setString(1, userName);
                 pst.setString(2, password);
-                rs = pst.executeQuery(); // reset .
+                rs = pst.executeQuery(); // reset.
                 if (rs.next()) {
                     pst = con.prepareStatement("select id,username,password from user");
                     JOptionPane.showMessageDialog(null, "login success welcome " + userName);

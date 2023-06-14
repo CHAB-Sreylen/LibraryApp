@@ -16,23 +16,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.*;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.*;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
-import javafx.stage.Stage;
 
 public class ListBookController implements Initializable {
 
@@ -44,6 +36,7 @@ public class ListBookController implements Initializable {
     PreparedStatement pst;
     ResultSet rs;
     int myIndex, id;
+    String title ,author, Year;
 
     @FXML
     private TableColumn<Book, String> Authorcolumn;
@@ -89,7 +82,7 @@ public class ListBookController implements Initializable {
     @FXML
     void UpdateBook(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("UpdateBook.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Update_form.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -114,7 +107,7 @@ public class ListBookController implements Initializable {
 
     }
 
-    public void Table() {
+    public void Table(){
         Connect();
         ObservableList<Book> books = FXCollections.observableArrayList();
         try {
@@ -146,10 +139,32 @@ public class ListBookController implements Initializable {
         table.setRowFactory(tv -> {
             TableRow<Book> myRow = new TableRow<>();
             myRow.setOnMouseClicked(event -> {
-                if (event.getClickCount() == 1 && (!myRow.isEmpty())) {
+                if (event.getClickCount() == 1 && (!myRow.isEmpty()))  {
 
                     myIndex = table.getSelectionModel().getSelectedIndex();
                     id = Integer.parseInt(String.valueOf(table.getItems().get(myIndex).getid()));
+                    title = String.valueOf(table.getItems().get(myIndex).gettitle());
+                    author = (String.valueOf(table.getItems().get(myIndex).getauthor()));
+                     Year = (String.valueOf(table.getItems().get(myIndex).getyear()));
+                    System.out.println(id+title+author+Year);
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Update_form.fxml"));
+                    try {
+                        root = loader.load();
+                        UpdateBookController sdc = loader.getController();
+                        sdc.getIDBook(id, title, author, Year);
+                        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                        scene = new Scene(root);
+                        stage.setScene(scene);
+                        stage.centerOnScreen();
+                        stage.show();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    
+                    // FXMLLoader loader = new FXMLLoader(getClass().getResource("UpdateBook.fxml"));
+                    // // root = loader.load();
+                    // UpdateBookController sdc = loader.getController();
+                    // sdc.getIDBook(id);
                     // txtBookTitle.setText(table.getItems().get(myIndex).getBookTitle());
                     // txtBookQuantity.setText(table.getItems().get(myIndex).getQuantity());
                     // txtBookCategory.setText(table.getItems().get(myIndex).getCategory());
