@@ -56,12 +56,12 @@ public class UpdateBookController implements Initializable{
             pst.setInt(4, bid);
             pst.executeUpdate();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-alert.setTitle("Student Registationn");
- 
-alert.setHeaderText("Student Registation");
-alert.setContentText("Updateddd!");
- 
-alert.showAndWait();
+            alert.setTitle("Update Book");
+            
+            alert.setHeaderText("You will change the info of book. ");
+            alert.setContentText("Updateddd!");
+            
+            alert.showAndWait();
            Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -96,9 +96,9 @@ alert.showAndWait();
             pst.executeUpdate();
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Book Registation");
+            alert.setTitle("Delete Book");
 
-            alert.setHeaderText("Book Registation");
+            alert.setHeaderText("Book will delete form the list.");
             alert.setContentText("Deleted!");
 
             alert.showAndWait();

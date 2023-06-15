@@ -111,6 +111,7 @@
             <Image url="@../../Downloads/Twitter%20Default%20Icons_Avis.jpeg" />
          </image>
       </ImageView>
+      <Button layoutX="21.0" layoutY="192.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #202a5e;" text="Log out" textFill="WHITE" />
    </children>
    <opaqueInsets>
       <Insets />

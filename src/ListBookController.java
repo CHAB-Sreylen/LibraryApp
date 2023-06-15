@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.Node;
@@ -243,6 +244,37 @@ public class ListBookController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+     public void LogoutOnAction(ActionEvent event) throws IOException {
+        
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmation Dialog");
+        alert.setHeaderText("Are you sure you want to logout");
+
+        // Add buttons to the alert dialog
+        ButtonType buttonTypeOk = new ButtonType("OK");
+        ButtonType buttonTypeCancel = new ButtonType("Cancel");
+        alert.getButtonTypes().setAll(buttonTypeOk, buttonTypeCancel);
+
+        // Wait for the user's response
+        alert.showAndWait().ifPresent(response -> {
+            if (response == buttonTypeOk) {
+                System.out.println("User clicked OK");
+                try {
+                    root = FXMLLoader.load(getClass().getResource("loginpage.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show(); 
+                    
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else if (response == buttonTypeCancel) {
+                System.out.println("User clicked Cancel");
+                alert.close();
+            }
+        });
     }
 
 }
